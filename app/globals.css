@@ -129,6 +129,11 @@ img {
   box-shadow: 0 16px 32px rgba(37, 99, 235, 0.25);
 }
 
+.btn-lg {
+  padding: 1.1rem 1.7rem;
+  font-size: 1rem;
+}
+
 .btn-outline {
   border: 1px solid rgba(17, 24, 39, 0.15);
   color: var(--text-dark);
@@ -247,6 +252,82 @@ img {
   gap: 1rem;
   margin-top: 1.8rem;
   color: var(--text-gray);
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  color: var(--text-gray);
+  font-weight: var(--weight-semibold);
+}
+
+.logo-row span {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: var(--bg-light);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  font-size: 0.9rem;
+}
+
+.system-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+}
+
+.diagram-block {
+  background: var(--bg-light);
+  border-radius: 16px;
+  padding: 1.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  min-width: 220px;
+  text-align: center;
+}
+
+.diagram-items {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text-dark);
+  font-weight: var(--weight-semibold);
+}
+
+.diagram-arrow {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.deliverable-preview {
+  background: var(--primary-50);
+  border-radius: 12px;
+  padding: 0.75rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  margin-bottom: 1rem;
+}
+
+.preview-bars {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.preview-bars span {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.2);
+}
+
+.preview-bars span:nth-child(2) {
+  width: 80%;
+}
+
+.preview-bars span:nth-child(3) {
+  width: 60%;
 }
 
 .system-flow {
@@ -384,6 +465,10 @@ img {
 @media (max-width: 640px) {
   .btn {
     width: 100%;
+  }
+
+  .diagram-arrow {
+    display: none;
   }
 
   .stats-row {

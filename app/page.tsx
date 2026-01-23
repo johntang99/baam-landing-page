@@ -63,6 +63,7 @@ const systemCards = [
 const deliverables = [
   {
     title: 'Google & Search Visibility',
+    preview: 'Google post preview',
     items: [
       'Google Business Profile optimization',
       '8 Google posts per month',
@@ -73,6 +74,7 @@ const deliverables = [
   },
   {
     title: 'Content Engine',
+    preview: 'Short video + article preview',
     items: [
       '2 short videos per month (30-45s)',
       'Video editing and optimization',
@@ -83,6 +85,7 @@ const deliverables = [
   },
   {
     title: 'Distribution & Reach',
+    preview: 'Social distribution preview',
     items: [
       'Video posted to YouTube and TikTok',
       'Social content distribution',
@@ -93,6 +96,7 @@ const deliverables = [
   },
   {
     title: 'Tracking & Reporting',
+    preview: 'Monthly scorecard preview',
     items: [
       'Visibility Score tracking',
       'Call and click measurement',
@@ -378,11 +382,11 @@ export default function HomePage() {
               </div>
 
               <div className="grid grid-2" style={{ marginTop: '2rem' }}>
-                <a className="btn btn-primary" href="#demo">
-                  Explore Live Demo Dashboard
-                </a>
-                <a className="btn btn-outline" href="#preview">
+                <a className="btn btn-primary btn-lg" href="#preview">
                   Get Free Market Presence Preview
+                </a>
+                <a className="btn btn-outline" href="#demo">
+                  Explore Live Demo Dashboard
                 </a>
               </div>
               <div style={{ marginTop: '1rem' }}>
@@ -393,9 +397,9 @@ export default function HomePage() {
               <div className="stats-row text-small">
                 <span>Trusted by 2,400+ local businesses</span>
                 <span>•</span>
-                <span>4.9/5 client satisfaction</span>
+                <span>124,000+ calls tracked</span>
                 <span>•</span>
-                <span>87% average visibility increase</span>
+                <span>4.9/5 client satisfaction</span>
               </div>
             </div>
 
@@ -479,8 +483,26 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="section-tight">
+          <div className="container" style={{ textAlign: 'center' }}>
+            <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+              Runs across the platforms your customers already trust
+            </p>
+            <div className="logo-row" style={{ marginTop: '1.5rem' }}>
+              <span>Google</span>
+              <span>Meta</span>
+              <span>TikTok</span>
+              <span>YouTube</span>
+              <span>Instagram</span>
+            </div>
+          </div>
+        </section>
+
         <section className="section bg-light">
           <div className="container">
+            <p className="text-subheading" style={{ color: 'var(--text-gray)' }}>
+              Sound familiar?
+            </p>
             <h2 className="text-heading">Most Local Businesses Stay Invisible—Not Because They&apos;re Bad, But Because They&apos;re Inconsistent</h2>
             <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', maxWidth: '820px' }}>
               Your potential customers are searching right now. If your business isn&apos;t showing up with fresh
@@ -516,22 +538,40 @@ export default function HomePage() {
               continuously—weekly work that drives monthly results.
             </p>
 
-            <div className="system-flow">
-              <div className="flow-row">
-                <span className="flow-node">Search</span>
-                <span className="flow-node">Social</span>
-                <span className="flow-node">Video</span>
-                <span className="flow-node">Website</span>
+            <div className="system-diagram">
+              <div className="diagram-block">
+                <div className="text-small" style={{ color: 'var(--text-gray)', fontWeight: 600 }}>
+                  Channels (We Manage)
+                </div>
+                <div className="diagram-items">
+                  <span>🔍 Search</span>
+                  <span>💬 Social</span>
+                  <span>🎥 Video</span>
+                  <span>🌐 Website</span>
+                </div>
               </div>
-              <div className="flow-row">
-                <span className="flow-node">Discovery</span>
-                <span className="flow-node">Trust</span>
-                <span className="flow-node">Action</span>
+              <div className="diagram-arrow">→</div>
+              <div className="diagram-block">
+                <div className="text-small" style={{ color: 'var(--text-gray)', fontWeight: 600 }}>
+                  Funnel (We Optimize)
+                </div>
+                <div className="diagram-items">
+                  <span>Discovery</span>
+                  <span>Trust</span>
+                  <span>Action</span>
+                </div>
               </div>
-              <div className="flow-row">
-                <span className="flow-node">Calls</span>
-                <span className="flow-node">Visits</span>
-                <span className="flow-node">Bookings</span>
+              <div className="diagram-arrow">→</div>
+              <div className="diagram-block">
+                <div className="text-small" style={{ color: 'var(--text-gray)', fontWeight: 600 }}>
+                  Outcomes (We Track)
+                </div>
+                <div className="diagram-items">
+                  <span>Calls</span>
+                  <span>Map Clicks</span>
+                  <span>Visits</span>
+                  <span>Bookings</span>
+                </div>
               </div>
             </div>
 
@@ -577,6 +617,16 @@ export default function HomePage() {
             <div className="grid grid-4" style={{ marginTop: '2.5rem' }}>
               {deliverables.map((item) => (
                 <div key={item.title} className="card" style={{ color: 'var(--text-dark)' }}>
+                  <div className="deliverable-preview">
+                    <div className="text-small" style={{ color: 'var(--text-gray)' }}>
+                      {item.preview}
+                    </div>
+                    <div className="preview-bars">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
                   <div className="text-subheading">{item.title}</div>
                   <ul style={{ marginTop: '1rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
                     {item.items.map((detail) => (
@@ -768,21 +818,21 @@ export default function HomePage() {
                 <tbody>
                   <tr>
                     <td>Who Does the Work</td>
-                    <td>You do</td>
-                    <td className="highlight">We do</td>
-                    <td>They do</td>
+                    <td>❌ You do</td>
+                    <td className="highlight">✅ We do</td>
+                    <td>⚠️ They do</td>
                   </tr>
                   <tr>
                     <td>Monthly Cost</td>
-                    <td>$50-200</td>
-                    <td className="highlight">$299-999</td>
-                    <td>$2,000-8,000</td>
+                    <td>❌ $50-200</td>
+                    <td className="highlight">✅ $299-999</td>
+                    <td>❌ $2,000-8,000</td>
                   </tr>
                   <tr>
                     <td>Time Required</td>
-                    <td>10-20 hrs/month</td>
-                    <td className="highlight">0 hours</td>
-                    <td>Meetings + approvals</td>
+                    <td>❌ 10-20 hrs/month</td>
+                    <td className="highlight">✅ 0 hours</td>
+                    <td>⚠️ Meetings + approvals</td>
                   </tr>
                   <tr>
                     <td>Content Creation</td>
