@@ -602,20 +602,29 @@ img {
 }
 
 .diagram-block {
-  background: var(--bg-light);
-  border-radius: 16px;
-  padding: 1.4rem;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  border: 2px solid rgba(15, 23, 42, 0.1);
+  box-shadow: var(--shadow-sm);
   min-width: 220px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.diagram-block:hover {
+  border-color: rgba(29, 78, 216, 0.25);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .diagram-items {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   display: grid;
-  gap: 0.5rem;
-  color: var(--text-dark);
+  gap: 0.75rem;
+  color: #334155;
   font-weight: var(--weight-semibold);
+  font-size: 1rem;
 }
 
 .diagram-arrow {

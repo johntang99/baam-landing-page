@@ -681,7 +681,7 @@ export default function HomePage() {
 
             <div className="system-diagram">
               <div className="diagram-block">
-                <div className="text-small" style={{ color: 'var(--text-gray)', fontWeight: 600 }}>
+                <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
                   Channels (We Manage)
                 </div>
                 <div className="diagram-items">
@@ -693,7 +693,7 @@ export default function HomePage() {
               </div>
               <div className="diagram-arrow">→</div>
               <div className="diagram-block">
-                <div className="text-small" style={{ color: 'var(--text-gray)', fontWeight: 600 }}>
+                <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
                   Funnel (We Optimize)
                 </div>
                 <div className="diagram-items">
@@ -704,7 +704,7 @@ export default function HomePage() {
               </div>
               <div className="diagram-arrow">→</div>
               <div className="diagram-block">
-                <div className="text-small" style={{ color: 'var(--text-gray)', fontWeight: 600 }}>
+                <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
                   Outcomes (We Track)
                 </div>
                 <div className="diagram-items">
