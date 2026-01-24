@@ -1,3 +1,7 @@
+"use client";
+
+import { useMemo, useState } from 'react';
+
 const problemCards = [
   {
     icon: '🔍',
@@ -230,6 +234,27 @@ const testimonials = [
   },
 ];
 
+const valueCalculator = [
+  {
+    id: 'diy',
+    label: 'Doing it myself (10-20 hrs/month)',
+    monthlyCost: 1200,
+    description: 'Opportunity cost of your time',
+  },
+  {
+    id: 'tools',
+    label: 'Using multiple tools ($200-500/month)',
+    monthlyCost: 450,
+    description: 'Tools stack + coordination time',
+  },
+  {
+    id: 'agency',
+    label: 'Using an agency ($2,000-8,000/month)',
+    monthlyCost: 3500,
+    description: 'Typical agency retainer',
+  },
+];
+
 const pricing = [
   {
     title: 'Baam Presence™',
@@ -326,6 +351,14 @@ const faqs = [
 ];
 
 export default function HomePage() {
+  const [calculatorChoice, setCalculatorChoice] = useState('agency');
+  const calculatorData = useMemo(() => {
+    const selected = valueCalculator.find((item) => item.id === calculatorChoice) || valueCalculator[0];
+    const baam = 599;
+    const savings = Math.max(selected.monthlyCost - baam, 0);
+    return { selected, baam, savings };
+  }, [calculatorChoice]);
+
   return (
     <>
       <header className="nav">
@@ -501,7 +534,7 @@ export default function HomePage() {
         <section className="section bg-light">
           <div className="container">
             <p className="text-subheading" style={{ color: 'var(--text-gray)' }}>
-              Sound familiar?
+              Maeket Reality & Business Owners' Pain Points
             </p>
             <h2 className="text-heading">Most Local Businesses Stay Invisible—Not Because They&apos;re Bad, But Because They&apos;re Inconsistent</h2>
             <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', maxWidth: '820px' }}>
@@ -509,21 +542,56 @@ export default function HomePage() {
               content, trust signals, and consistent activity, they&apos;re choosing someone else.
             </p>
             <div className="grid grid-3" style={{ marginTop: '2.5rem' }}>
-              {problemCards.map((card) => (
-                <div key={card.title} className="card">
-                  <div className="text-subheading">
-                    {card.icon} {card.title}
-                  </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
-                    {card.description}
-                  </p>
-                </div>
-              ))}
+              <div className="card">
+                <div className="text-subheading">Market Reality</div>
+                <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  Based on 2024–2025 local search studies (BrightLocal, Google, Moz).
+                </p>
+                <ul style={{ marginTop: '0.9rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
+                  <li className="text-small">70–80% of local searches happen on Google Search + Google Maps</li>
+                  <li className="text-small">20–30% discover businesses via Facebook, Instagram, YouTube, TikTok</li>
+                </ul>
+                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.9rem' }}>
+                  If you’re inactive on Google and social, customers don’t see you—and don’t choose you.
+                </p>
+              </div>
+              <div className="card">
+                <div className="text-subheading">No Time & No Knowledge</div>
+                <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  Most owners already know they need consistency—the problem is execution.
+                </p>
+                <ul style={{ marginTop: '0.9rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
+                  <li className="text-small">No time to manage GBP or create content</li>
+                  <li className="text-small">Unclear what content actually works</li>
+                  <li className="text-small">Websites rarely updated, rankings slip</li>
+                  <li className="text-small">Inactive social + GBP → no exposure, no trust</li>
+                </ul>
+                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.9rem' }}>
+                  This is why good businesses still lose customers online.
+                </p>
+              </div>
+              <div className="card">
+                <div className="text-subheading">Agency Costs Add Up</div>
+                <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  Typical market pricing across multiple vendors:
+                </p>
+                <ul style={{ marginTop: '0.9rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
+                  <li className="text-small">Website + SEO setup: $1,500–$4,000</li>
+                  <li className="text-small">Monthly website & SEO: $800–$2,500/mo</li>
+                  <li className="text-small">Content + social: $1,000–$3,000/mo</li>
+                  <li className="text-small">GBP management: $300–$800/mo</li>
+                </ul>
+                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.9rem' }}>
+                  That’s $2,000–$8,000 per month spread across multiple vendors.
+                </p>
+              </div>
             </div>
-            <p className="text-body" style={{ textAlign: 'center', marginTop: '2.5rem', color: 'var(--text-gray)' }}>
-              The businesses that win locally aren&apos;t necessarily the best—they&apos;re the most consistently visible
-              and trusted.
-            </p>
+            <div className="card" style={{ marginTop: '2.5rem', textAlign: 'center' }}>
+              <p className="text-subheading">
+                The businesses that win locally aren&apos;t necessarily the best—they&apos;re the most consistently visible
+                and trusted.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -651,6 +719,18 @@ export default function HomePage() {
               Baam doesn&apos;t promise instant rankings. We build sustainable visibility and trust that grows stronger
               every month.
             </p>
+            <div className="timeline-progress" style={{ marginTop: '2rem' }}>
+              {timeline.map((stage, index) => (
+                <div key={stage.title} className="timeline-progress-row">
+                  <div className="timeline-progress-label">
+                    <span className="text-small">{stage.title}</span>
+                  </div>
+                  <div className="timeline-progress-bar">
+                    <span style={{ width: `${(index + 1) * 25}%` }}></span>
+                  </div>
+                </div>
+              ))}
+            </div>
             <div className="timeline" style={{ marginTop: '2.5rem' }}>
               {timeline.map((stage) => (
                 <div key={stage.title} className="timeline-item">
@@ -756,6 +836,23 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            <div className="card video-card" style={{ marginTop: '2.5rem' }}>
+              <div>
+                <span className="badge">90-Second Demo</span>
+                <h3 className="text-subheading" style={{ marginTop: '0.75rem' }}>
+                  See How Baam Works in 90 Seconds
+                </h3>
+                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
+                  A quick walkthrough of the dashboard, weekly deliverables, and monthly reporting clients receive.
+                </p>
+              </div>
+              <div className="video-placeholder">
+                <div className="play-button">▶</div>
+                <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+                  Demo video placeholder
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -765,6 +862,49 @@ export default function HomePage() {
             <p className="text-body" style={{ marginTop: '1rem', color: 'var(--text-gray)' }}>
               No setup fees. No contracts. Cancel anytime. Everything you need to stay visible, trusted, and growing.
             </p>
+            <div className="card" style={{ marginTop: '2rem' }}>
+              <div className="text-subheading">Compare Your Current Spend</div>
+              <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                Select the option that best matches your current approach.
+              </p>
+              <div className="calculator-options">
+                {valueCalculator.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setCalculatorChoice(item.id)}
+                    className={`calculator-option ${calculatorChoice === item.id ? 'active' : ''}`}
+                  >
+                    <span className="text-body">{item.label}</span>
+                    <span className="text-small" style={{ color: 'var(--text-gray)' }}>
+                      {item.description}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="calculator-result">
+                <div>
+                  <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+                    Your current cost
+                  </p>
+                  <div className="text-subheading">${calculatorData.selected.monthlyCost.toLocaleString()}</div>
+                </div>
+                <div>
+                  <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+                    Baam Growth
+                  </p>
+                  <div className="text-subheading">${calculatorData.baam}</div>
+                </div>
+                <div>
+                  <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+                    Estimated monthly savings
+                  </p>
+                  <div className="text-subheading" style={{ color: 'var(--success)' }}>
+                    ${calculatorData.savings.toLocaleString()}
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="grid grid-3" style={{ marginTop: '2.5rem' }}>
               {pricing.map((plan) => (
                 <div key={plan.title} className={`card ${plan.highlight ? 'pricing-highlight' : ''}`}>

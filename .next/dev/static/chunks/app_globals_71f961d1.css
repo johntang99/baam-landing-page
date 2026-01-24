@@ -323,6 +323,96 @@ img {
   width: 60%;
 }
 
+.timeline-progress {
+  gap: 1rem;
+  display: grid;
+}
+
+.timeline-progress-row {
+  gap: .75rem;
+  display: grid;
+}
+
+.timeline-progress-label {
+  color: var(--text-gray);
+  justify-content: space-between;
+  display: flex;
+}
+
+.timeline-progress-bar {
+  background: #94a3b833;
+  border-radius: 999px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.timeline-progress-bar span {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 999px;
+  height: 100%;
+  display: block;
+}
+
+.calculator-options {
+  gap: .75rem;
+  margin-top: 1.2rem;
+  display: grid;
+}
+
+.calculator-option {
+  text-align: left;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #94a3b833;
+  border-radius: 14px;
+  gap: .35rem;
+  padding: .9rem 1rem;
+  transition: border .2s, box-shadow .2s;
+  display: grid;
+}
+
+.calculator-option.active {
+  border-color: #2563eb73;
+  box-shadow: 0 12px 26px #2563eb26;
+}
+
+.calculator-result {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  display: grid;
+}
+
+.video-card {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  display: grid;
+}
+
+.video-placeholder {
+  background: var(--bg-light);
+  text-align: center;
+  border: 1px solid #94a3b833;
+  border-radius: 16px;
+  place-items: center;
+  gap: .5rem;
+  min-height: 220px;
+  display: grid;
+}
+
+.play-button {
+  width: 56px;
+  height: 56px;
+  color: var(--primary);
+  background: #fff;
+  border-radius: 999px;
+  place-items: center;
+  font-size: 1.3rem;
+  display: grid;
+  box-shadow: 0 10px 22px #0f172a26;
+}
+
 .system-flow {
   align-items: center;
   gap: 1.5rem;
