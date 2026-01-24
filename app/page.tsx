@@ -452,7 +452,7 @@ export default function HomePage() {
                 manage. Just consistent work that compounds over time.
               </p>
 
-              <div className="grid grid-3" style={{ marginTop: '2.5rem', gap: '1.5rem' }}>
+              <div className="grid grid-2" style={{ marginTop: '2.5rem', gap: '1.5rem' }}>
                 <div className="card-elevated">
                   <div className="text-subheading">
                     <span className="icon-badge"><Target size={18} /></span>
@@ -469,15 +469,6 @@ export default function HomePage() {
                   </div>
                   <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
                     Every week of presence builds on the last: more visibility, more trust, more calls.
-                  </p>
-                </div>
-                <div className="card-elevated">
-                  <div className="text-subheading">
-                    <span className="icon-badge"><CheckCircle2 size={18} /></span>
-                    Real Outcomes Tracked
-                  </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
-                    Calls, map clicks, website visits, bookings—not vanity metrics.
                   </p>
                 </div>
               </div>
