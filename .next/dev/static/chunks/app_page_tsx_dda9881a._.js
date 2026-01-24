@@ -3110,8 +3110,9 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-body",
                                                     style: {
-                                                        color: 'var(--text-gray)',
-                                                        marginTop: '0.5rem'
+                                                        color: '#475569',
+                                                        marginTop: '0.75rem',
+                                                        fontWeight: 500
                                                     },
                                                     children: [
                                                         "Best for: ",
@@ -3125,13 +3126,14 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                     style: {
                                                         marginTop: '1.5rem',
-                                                        paddingLeft: '1.2rem',
-                                                        color: 'var(--text-gray)'
+                                                        paddingLeft: '1.2rem'
                                                     },
                                                     children: plan.included.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            className: "text-small",
+                                                            className: "text-body",
                                                             style: {
-                                                                marginBottom: '0.6rem'
+                                                                marginBottom: '0.6rem',
+                                                                color: '#475569',
+                                                                fontWeight: 500
                                                             },
                                                             children: [
                                                                 "✓ ",
@@ -3150,9 +3152,9 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-body",
                                                     style: {
-                                                        color: 'var(--text-gray)',
+                                                        color: '#475569',
                                                         marginTop: '1.5rem',
-                                                        fontSize: '0.95rem'
+                                                        fontWeight: 500
                                                     },
                                                     children: [
                                                         "Who it's for: ",
@@ -3189,8 +3191,9 @@ function HomePage() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-body",
                                     style: {
-                                        marginTop: '2rem',
-                                        color: 'var(--text-gray)'
+                                        marginTop: '2.5rem',
+                                        color: '#475569',
+                                        fontWeight: 500
                                     },
                                     children: "Not sure which plan? Start with Growth—it's what 78% of our clients choose and delivers the best ROI for most local businesses."
                                 }, void 0, false, {
@@ -3199,10 +3202,11 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-small",
+                                    className: "text-body",
                                     style: {
                                         marginTop: '0.75rem',
-                                        color: 'var(--text-gray)'
+                                        color: '#475569',
+                                        fontWeight: 500
                                     },
                                     children: "One-time $500 setup fee applies to all plans (waived for annual prepay)"
                                 }, void 0, false, {

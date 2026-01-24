@@ -994,17 +994,17 @@ export default function HomePage() {
                   <div className="text-heading" style={{ marginTop: '0.75rem', color: 'var(--text-dark)' }}>
                     {plan.price}
                   </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
                     Best for: {plan.bestFor}
                   </p>
-                  <ul style={{ marginTop: '1.5rem', paddingLeft: '1.2rem', color: 'var(--text-gray)' }}>
+                  <ul style={{ marginTop: '1.5rem', paddingLeft: '1.2rem' }}>
                     {plan.included.map((item) => (
-                      <li key={item} className="text-small" style={{ marginBottom: '0.6rem' }}>
+                      <li key={item} className="text-body" style={{ marginBottom: '0.6rem', color: '#475569', fontWeight: 500 }}>
                         ✓ {item}
                       </li>
                     ))}
                   </ul>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1.5rem', fontSize: '0.95rem' }}>
+                  <p className="text-body" style={{ color: '#475569', marginTop: '1.5rem', fontWeight: 500 }}>
                     Who it&apos;s for: {plan.who}
                   </p>
                   <button className={`btn ${plan.highlight ? 'btn-primary' : 'btn-outline'}`} style={{ marginTop: '2rem', width: '100%' }}>
@@ -1013,11 +1013,11 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <p className="text-body" style={{ marginTop: '2rem', color: 'var(--text-gray)' }}>
+            <p className="text-body" style={{ marginTop: '2.5rem', color: '#475569', fontWeight: 500 }}>
               Not sure which plan? Start with Growth—it&apos;s what 78% of our clients choose and delivers the best ROI
               for most local businesses.
             </p>
-            <p className="text-small" style={{ marginTop: '0.75rem', color: 'var(--text-gray)' }}>
+            <p className="text-body" style={{ marginTop: '0.75rem', color: '#475569', fontWeight: 500 }}>
               One-time $500 setup fee applies to all plans (waived for annual prepay)
             </p>
           </div>
