@@ -1358,7 +1358,7 @@ function HomePage() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-small",
+                                                    className: "text-body",
                                                     style: {
                                                         color: '#475569',
                                                         marginTop: '0.75rem',
@@ -1377,10 +1377,10 @@ function HomePage() {
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "70–80% of local searches happen on Google Search + Google Maps"
@@ -1390,10 +1390,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "20–30% discover businesses via Facebook, Instagram, YouTube, TikTok"
@@ -1457,7 +1457,7 @@ function HomePage() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-small",
+                                                    className: "text-body",
                                                     style: {
                                                         color: '#475569',
                                                         marginTop: '0.75rem',
@@ -1476,10 +1476,10 @@ function HomePage() {
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "No time to manage GBP or create content"
@@ -1489,10 +1489,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "Unclear what content actually works"
@@ -1502,10 +1502,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "Websites rarely updated, rankings slip"
@@ -1515,10 +1515,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "Inactive social + GBP → no exposure, no trust"
@@ -1582,7 +1582,7 @@ function HomePage() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-small",
+                                                    className: "text-body",
                                                     style: {
                                                         color: '#475569',
                                                         marginTop: '0.75rem',
@@ -1601,10 +1601,10 @@ function HomePage() {
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "Website + SEO setup: $1,500–$4,000"
@@ -1614,10 +1614,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "Monthly website & SEO: $800–$2,500/mo"
@@ -1627,10 +1627,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "Content + social: $1,000–$3,000/mo"
@@ -1640,10 +1640,10 @@ function HomePage() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "text-body",
                                                             style: {
                                                                 marginBottom: '0.5rem',
                                                                 color: '#475569',
-                                                                fontSize: '0.9rem',
                                                                 fontWeight: 500
                                                             },
                                                             children: "GBP management: $300–$800/mo"
