@@ -615,46 +615,46 @@ export default function HomePage() {
               <div className="card-bordered">
                 <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Search size={20} /></span>
                 <div className="text-subheading">Market Reality</div>
-                <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
+                <p className="text-small" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
                   Based on 2024–2025 local search studies (BrightLocal, Google, Moz).
                 </p>
-                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem', color: 'var(--text-dark)' }}>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>70–80% of local searches happen on Google Search + Google Maps</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>20–30% discover businesses via Facebook, Instagram, YouTube, TikTok</li>
+                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem', color: '#334155' }}>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>70–80% of local searches happen on Google Search + Google Maps</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>20–30% discover businesses via Facebook, Instagram, YouTube, TikTok</li>
                 </ul>
-                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', fontWeight: 500 }}>
+                <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
                   If you're inactive on Google and social, customers don't see you—and don't choose you.
                 </p>
               </div>
               <div className="card-bordered">
                 <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Clock size={20} /></span>
                 <div className="text-subheading">No Time & No Knowledge</div>
-                <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
+                <p className="text-small" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
                   Most owners already know they need consistency—the problem is execution.
                 </p>
-                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem', color: 'var(--text-dark)' }}>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>No time to manage GBP or create content</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>Unclear what content actually works</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>Websites rarely updated, rankings slip</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>Inactive social + GBP → no exposure, no trust</li>
+                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem', color: '#334155' }}>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>No time to manage GBP or create content</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Unclear what content actually works</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Websites rarely updated, rankings slip</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Inactive social + GBP → no exposure, no trust</li>
                 </ul>
-                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', fontWeight: 500 }}>
+                <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
                   This is why good businesses still lose customers online.
                 </p>
               </div>
               <div className="card-bordered">
                 <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><BarChart3 size={20} /></span>
                 <div className="text-subheading">Agency Costs Add Up</div>
-                <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
+                <p className="text-small" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
                   Typical market pricing across multiple vendors:
                 </p>
-                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem', color: 'var(--text-dark)' }}>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>Website + SEO setup: $1,500–$4,000</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>Monthly website & SEO: $800–$2,500/mo</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>Content + social: $1,000–$3,000/mo</li>
-                  <li className="text-small" style={{ marginBottom: '0.5rem' }}>GBP management: $300–$800/mo</li>
+                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem', color: '#334155' }}>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Website + SEO setup: $1,500–$4,000</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Monthly website & SEO: $800–$2,500/mo</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>Content + social: $1,000–$3,000/mo</li>
+                  <li className="text-small" style={{ marginBottom: '0.5rem', fontWeight: 500 }}>GBP management: $300–$800/mo</li>
                 </ul>
-                <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', fontWeight: 500 }}>
+                <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
                   That's $2,000–$8,000 per month spread across multiple vendors.
                 </p>
               </div>

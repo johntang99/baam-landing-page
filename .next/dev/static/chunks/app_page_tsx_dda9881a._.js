@@ -1366,8 +1366,9 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-small",
                                                     style: {
-                                                        color: 'var(--text-gray)',
-                                                        marginTop: '0.75rem'
+                                                        color: '#475569',
+                                                        marginTop: '0.75rem',
+                                                        fontWeight: 500
                                                     },
                                                     children: "Based on 2024–2025 local search studies (BrightLocal, Google, Moz)."
                                                 }, void 0, false, {
@@ -1379,13 +1380,14 @@ function HomePage() {
                                                     style: {
                                                         marginTop: '1rem',
                                                         paddingLeft: '1.2rem',
-                                                        color: 'var(--text-dark)'
+                                                        color: '#334155'
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "70–80% of local searches happen on Google Search + Google Maps"
                                                         }, void 0, false, {
@@ -1396,7 +1398,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "20–30% discover businesses via Facebook, Instagram, YouTube, TikTok"
                                                         }, void 0, false, {
@@ -1413,7 +1416,7 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-body",
                                                     style: {
-                                                        color: 'var(--text-gray)',
+                                                        color: '#475569',
                                                         marginTop: '1rem',
                                                         fontWeight: 500
                                                     },
@@ -1461,8 +1464,9 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-small",
                                                     style: {
-                                                        color: 'var(--text-gray)',
-                                                        marginTop: '0.75rem'
+                                                        color: '#475569',
+                                                        marginTop: '0.75rem',
+                                                        fontWeight: 500
                                                     },
                                                     children: "Most owners already know they need consistency—the problem is execution."
                                                 }, void 0, false, {
@@ -1474,13 +1478,14 @@ function HomePage() {
                                                     style: {
                                                         marginTop: '1rem',
                                                         paddingLeft: '1.2rem',
-                                                        color: 'var(--text-dark)'
+                                                        color: '#334155'
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "No time to manage GBP or create content"
                                                         }, void 0, false, {
@@ -1491,7 +1496,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "Unclear what content actually works"
                                                         }, void 0, false, {
@@ -1502,7 +1508,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "Websites rarely updated, rankings slip"
                                                         }, void 0, false, {
@@ -1513,7 +1520,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "Inactive social + GBP → no exposure, no trust"
                                                         }, void 0, false, {
@@ -1530,7 +1538,7 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-body",
                                                     style: {
-                                                        color: 'var(--text-gray)',
+                                                        color: '#475569',
                                                         marginTop: '1rem',
                                                         fontWeight: 500
                                                     },
@@ -1578,8 +1586,9 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-small",
                                                     style: {
-                                                        color: 'var(--text-gray)',
-                                                        marginTop: '0.75rem'
+                                                        color: '#475569',
+                                                        marginTop: '0.75rem',
+                                                        fontWeight: 500
                                                     },
                                                     children: "Typical market pricing across multiple vendors:"
                                                 }, void 0, false, {
@@ -1591,13 +1600,14 @@ function HomePage() {
                                                     style: {
                                                         marginTop: '1rem',
                                                         paddingLeft: '1.2rem',
-                                                        color: 'var(--text-dark)'
+                                                        color: '#334155'
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "Website + SEO setup: $1,500–$4,000"
                                                         }, void 0, false, {
@@ -1608,7 +1618,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "Monthly website & SEO: $800–$2,500/mo"
                                                         }, void 0, false, {
@@ -1619,7 +1630,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "Content + social: $1,000–$3,000/mo"
                                                         }, void 0, false, {
@@ -1630,7 +1642,8 @@ function HomePage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             className: "text-small",
                                                             style: {
-                                                                marginBottom: '0.5rem'
+                                                                marginBottom: '0.5rem',
+                                                                fontWeight: 500
                                                             },
                                                             children: "GBP management: $300–$800/mo"
                                                         }, void 0, false, {
@@ -1647,7 +1660,7 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-body",
                                                     style: {
-                                                        color: 'var(--text-gray)',
+                                                        color: '#475569',
                                                         marginTop: '1rem',
                                                         fontWeight: 500
                                                     },
