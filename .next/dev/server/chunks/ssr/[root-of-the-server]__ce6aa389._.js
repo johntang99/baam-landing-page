@@ -556,6 +556,11 @@ function HomePage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "badge",
+                                                style: {
+                                                    background: 'rgba(245, 158, 11, 0.15)',
+                                                    color: '#fbbf24',
+                                                    border: '1px solid rgba(245, 158, 11, 0.3)'
+                                                },
                                                 children: "Always-On Market Presence System"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
@@ -565,7 +570,10 @@ function HomePage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                                 className: "text-display",
                                                 style: {
-                                                    marginTop: '1.2rem'
+                                                    marginTop: '1.2rem',
+                                                    color: '#ffffff',
+                                                    background: 'none',
+                                                    WebkitTextFillColor: '#ffffff'
                                                 },
                                                 children: "Your Business Should Be Growing Every Week. Let Baam Handle It."
                                             }, void 0, false, {
@@ -577,7 +585,8 @@ function HomePage() {
                                                 className: "text-body",
                                                 style: {
                                                     marginTop: '1.2rem',
-                                                    color: 'var(--text-gray)'
+                                                    color: 'rgba(255, 255, 255, 0.85)',
+                                                    lineHeight: '1.8'
                                                 },
                                                 children: "We run your market presence across Google, social, video, and your website—continuously—so customers can find you, trust you, and choose you. No tools to learn. No campaigns to manage. Just consistent work that compounds over time."
                                             }, void 0, false, {
@@ -736,7 +745,8 @@ function HomePage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "grid grid-2",
                                                 style: {
-                                                    marginTop: '2rem'
+                                                    marginTop: '2.5rem',
+                                                    gap: '1rem'
                                                 },
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -749,7 +759,7 @@ function HomePage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        className: "btn btn-outline",
+                                                        className: "btn btn-light btn-lg",
                                                         href: "#demo",
                                                         children: "Explore Live Demo Dashboard"
                                                     }, void 0, false, {
@@ -765,15 +775,17 @@ function HomePage() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 style: {
-                                                    marginTop: '1rem'
+                                                    marginTop: '1.2rem'
                                                 },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                     className: "text-small",
                                                     href: "#pricing",
                                                     style: {
-                                                        color: 'var(--primary)'
+                                                        color: 'rgba(245, 158, 11, 0.9)',
+                                                        textDecoration: 'underline',
+                                                        textUnderlineOffset: '4px'
                                                     },
-                                                    children: "View Pricing"
+                                                    children: "View Pricing →"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 494,
@@ -786,6 +798,9 @@ function HomePage() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "stats-row text-small",
+                                                style: {
+                                                    color: 'rgba(255, 255, 255, 0.7)'
+                                                },
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Trusted by 2,400+ local businesses"

@@ -442,11 +442,11 @@ export default function HomePage() {
           </div>
           <div className="container hero-layout">
             <div>
-              <span className="badge">Always-On Market Presence System</span>
-              <h1 className="text-display" style={{ marginTop: '1.2rem' }}>
+              <span className="badge" style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24', border: '1px solid rgba(245, 158, 11, 0.3)' }}>Always-On Market Presence System</span>
+              <h1 className="text-display" style={{ marginTop: '1.2rem', color: '#ffffff', background: 'none', WebkitTextFillColor: '#ffffff' }}>
                 Your Business Should Be Growing Every Week. Let Baam Handle It.
               </h1>
-              <p className="text-body" style={{ marginTop: '1.2rem', color: 'var(--text-gray)' }}>
+              <p className="text-body" style={{ marginTop: '1.2rem', color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.8' }}>
                 We run your market presence across Google, social, video, and your website—continuously—so
                 customers can find you, trust you, and choose you. No tools to learn. No campaigns to
                 manage. Just consistent work that compounds over time.
@@ -482,20 +482,20 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="grid grid-2" style={{ marginTop: '2rem' }}>
+              <div className="grid grid-2" style={{ marginTop: '2.5rem', gap: '1rem' }}>
                 <a className="btn btn-primary btn-lg" href="#preview">
                   Get Free Market Presence Preview
                 </a>
-                <a className="btn btn-outline" href="#demo">
+                <a className="btn btn-light btn-lg" href="#demo">
                   Explore Live Demo Dashboard
                 </a>
               </div>
-              <div style={{ marginTop: '1rem' }}>
-                <a className="text-small" href="#pricing" style={{ color: 'var(--primary)' }}>
-                  View Pricing
+              <div style={{ marginTop: '1.2rem' }}>
+                <a className="text-small" href="#pricing" style={{ color: 'rgba(245, 158, 11, 0.9)', textDecoration: 'underline', textUnderlineOffset: '4px' }}>
+                  View Pricing →
                 </a>
               </div>
-              <div className="stats-row text-small">
+              <div className="stats-row text-small" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
                 <span>Trusted by 2,400+ local businesses</span>
                 <span>•</span>
                 <span>124,000+ calls tracked</span>
