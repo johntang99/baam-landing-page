@@ -720,22 +720,20 @@ export default function HomePage() {
               {systemCards.map((card) => {
                 const Icon = card.icon;
                 return (
-                  <div key={card.title} className="card">
-                    <div className="text-subheading">
-                      <span className="icon-badge"><Icon size={18} /></span>
-                      {card.title}
-                    </div>
-                  <p className="text-body" style={{ marginTop: '0.5rem', color: 'var(--text-gray)' }}>
+                  <div key={card.title} className="card-bordered">
+                    <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Icon size={20} /></span>
+                    <div className="text-subheading">{card.title}</div>
+                  <p className="text-body" style={{ marginTop: '0.75rem', color: '#475569', fontWeight: 500 }}>
                     {card.subtitle}
                   </p>
-                  <ul style={{ marginTop: '1rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
+                  <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem' }}>
                     {card.items.map((item) => (
-                      <li key={item} className="text-small" style={{ marginBottom: '0.5rem' }}>
+                      <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem' }}>
+                  <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
                     {card.result}
                   </p>
                   </div>
@@ -761,10 +759,10 @@ export default function HomePage() {
             </p>
             <div className="grid grid-4" style={{ marginTop: '2.5rem' }}>
               {deliverables.map((item) => (
-                <div key={item.title} className="card" style={{ color: 'var(--text-dark)' }}>
+                <div key={item.title} className="card-bordered" style={{ color: 'var(--text-dark)' }}>
                   <div className="deliverable-preview">
                     <img className="deliverable-thumb" src={item.image} alt={item.title} />
-                    <div className="text-small" style={{ color: 'var(--text-gray)' }}>
+                    <div className="text-body" style={{ color: '#475569', fontWeight: 500 }}>
                       {item.preview}
                     </div>
                     <div className="preview-bars">
@@ -773,10 +771,10 @@ export default function HomePage() {
                       <span></span>
                     </div>
                   </div>
-                  <div className="text-subheading">{item.title}</div>
-                  <ul style={{ marginTop: '1rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
+                  <div className="text-subheading" style={{ marginTop: '1rem' }}>{item.title}</div>
+                  <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem' }}>
                     {item.items.map((detail) => (
-                      <li key={detail} className="text-small" style={{ marginBottom: '0.5rem' }}>
+                      <li key={detail} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
                         ✓ {detail}
                       </li>
                     ))}
@@ -862,12 +860,10 @@ export default function HomePage() {
               {industries.map((industry) => {
                 const Icon = industry.icon;
                 return (
-                  <div key={industry.title} className="card">
-                    <div className="text-subheading">
-                      <span className="icon-badge"><Icon size={18} /></span>
-                      {industry.title}
-                    </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
+                  <div key={industry.title} className="card-bordered">
+                    <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Icon size={20} /></span>
+                    <div className="text-subheading">{industry.title}</div>
+                  <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
                     {industry.detail}
                   </p>
                   </div>
@@ -883,22 +879,22 @@ export default function HomePage() {
         <section className="section">
           <div className="container">
             <h2 className="text-heading">Real Businesses, Real Results</h2>
-            <div className="grid grid-3" style={{ marginTop: '2rem' }}>
-              <div className="card" style={{ textAlign: 'center' }}>
-                <div className="text-display">2,400+</div>
-                <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+            <div className="grid grid-3" style={{ marginTop: '2.5rem', gap: '2rem' }}>
+              <div className="stat-card">
+                <div className="stat-number">2,400+</div>
+                <p className="text-body" style={{ color: '#475569', marginTop: '0.5rem', fontWeight: 500 }}>
                   Active businesses using Baam
                 </p>
               </div>
-              <div className="card" style={{ textAlign: 'center' }}>
-                <div className="text-display">87%</div>
-                <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+              <div className="stat-card">
+                <div className="stat-number">87%</div>
+                <p className="text-body" style={{ color: '#475569', marginTop: '0.5rem', fontWeight: 500 }}>
                   Average visibility increase in 6 months
                 </p>
               </div>
-              <div className="card" style={{ textAlign: 'center' }}>
-                <div className="text-display">4.9/5</div>
-                <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+              <div className="stat-card">
+                <div className="stat-number">4.9/5</div>
+                <p className="text-body" style={{ color: '#475569', marginTop: '0.5rem', fontWeight: 500 }}>
                   Client satisfaction rating
                 </p>
               </div>
