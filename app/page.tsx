@@ -1,31 +1,27 @@
 "use client";
 
-import { useMemo, useState } from 'react';
-
-const problemCards = [
-  {
-    icon: '🔍',
-    title: '70-85% of Local Discovery Happens on Google',
-    description:
-      "If you're not on Google Search, Google Maps, and review platforms—with recent activity—you don't exist to most customers.",
-  },
-  {
-    icon: '⏰',
-    title: 'Marketing Stops When You Get Busy',
-    description:
-      "Most businesses try marketing for a few weeks, then stop when real work kicks in. Competitors who stay visible win by default.",
-  },
-  {
-    icon: '📉',
-    title: "One-Time Campaigns Don't Build Long-Term Trust",
-    description:
-      'Running ads or posting occasionally creates spikes, not sustainable growth. Real market presence compounds weekly.',
-  },
-];
+import { useEffect, useMemo, useState } from 'react';
+import {
+  BarChart3,
+  BriefcaseBusiness,
+  Car,
+  CheckCircle2,
+  Clock,
+  Search,
+  Sparkles,
+  Stethoscope,
+  TrendingUp,
+  UtensilsCrossed,
+  Video,
+  Wrench,
+  Scissors,
+  ShoppingBag,
+  Target,
+} from 'lucide-react';
 
 const systemCards = [
   {
-    icon: '🎯',
+    icon: Target,
     title: 'Discovery Engine',
     subtitle: 'Your Business Shows Up Everywhere Customers Search',
     items: [
@@ -38,7 +34,7 @@ const systemCards = [
       'Customers find you when searching for what you offer—on Google Search, Google Maps, and social feeds.',
   },
   {
-    icon: '🎥',
+    icon: Video,
     title: 'Trust Engine',
     subtitle: 'Prove Your Expertise with Content That Builds Credibility',
     items: [
@@ -51,7 +47,7 @@ const systemCards = [
       'When customers find you, they see proof you’re active, current, and trustworthy.',
   },
   {
-    icon: '📊',
+    icon: BarChart3,
     title: 'Performance Engine',
     subtitle: 'Track Real Business Outcomes—Not Vanity Metrics',
     items: [
@@ -68,6 +64,7 @@ const deliverables = [
   {
     title: 'Google & Search Visibility',
     preview: 'Google post preview',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80',
     items: [
       'Google Business Profile optimization',
       '8 Google posts per month',
@@ -79,6 +76,7 @@ const deliverables = [
   {
     title: 'Content Engine',
     preview: 'Short video + article preview',
+    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80',
     items: [
       '2 short videos per month (30-45s)',
       'Video editing and optimization',
@@ -90,6 +88,7 @@ const deliverables = [
   {
     title: 'Distribution & Reach',
     preview: 'Social distribution preview',
+    image: 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?w=600&q=80',
     items: [
       'Video posted to YouTube and TikTok',
       'Social content distribution',
@@ -101,6 +100,7 @@ const deliverables = [
   {
     title: 'Tracking & Reporting',
     preview: 'Monthly scorecard preview',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
     items: [
       'Visibility Score tracking',
       'Call and click measurement',
@@ -169,42 +169,42 @@ const timeline = [
 
 const industries = [
   {
-    icon: '🏥',
+    icon: Stethoscope,
     title: 'Medical & Healthcare',
     detail: 'Primary Care • Urgent Care • Physical Therapy • Chiropractors • Dental Clinics',
   },
   {
-    icon: '🔧',
+    icon: Wrench,
     title: 'Home Services',
     detail: 'HVAC • Plumbing • Electrical • Roofing • Landscaping • Tree Service',
   },
   {
-    icon: '🍽️',
+    icon: UtensilsCrossed,
     title: 'Restaurants & Food',
     detail: 'Casual Dining • Fast Casual • Cafes • Bakeries • Catering',
   },
   {
-    icon: '💇',
+    icon: Sparkles,
     title: 'Beauty & Wellness',
     detail: 'Salons • Spas • Med Spas • Fitness Studios • Yoga • Massage',
   },
   {
-    icon: '💼',
+    icon: BriefcaseBusiness,
     title: 'Professional Services',
     detail: 'Law Firms • Accounting • Insurance • Financial Advisors • Real Estate',
   },
   {
-    icon: '🛍️',
+    icon: ShoppingBag,
     title: 'Retail & Shops',
     detail: 'Boutiques • Specialty Stores • Pet Shops • Florists • Gift Shops',
   },
   {
-    icon: '🚗',
+    icon: Car,
     title: 'Auto Services',
     detail: 'Auto Repair • Detailing • Body Shops • Tire Services • Oil Change',
   },
   {
-    icon: '✂️',
+    icon: Scissors,
     title: 'Personal Services',
     detail: 'Barbers • Cleaners • Pet Grooming • Tutoring • Photography',
   },
@@ -217,6 +217,7 @@ const testimonials = [
     name: 'Sarah M.',
     role: 'Family Medicine Clinic',
     location: 'Middletown, NY',
+    avatar: 'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=200&q=80',
   },
   {
     quote:
@@ -224,6 +225,7 @@ const testimonials = [
     name: 'Mike R.',
     role: 'HVAC Company',
     location: 'Orange County, NY',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
   },
   {
     quote:
@@ -231,6 +233,7 @@ const testimonials = [
     name: 'Jennifer K.',
     role: 'Law Firm',
     location: 'Hudson Valley, NY',
+    avatar: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200&q=80',
   },
 ];
 
@@ -352,12 +355,62 @@ const faqs = [
 
 export default function HomePage() {
   const [calculatorChoice, setCalculatorChoice] = useState('agency');
+  const [counts, setCounts] = useState({
+    score: 0,
+    posts: 0,
+    videos: 0,
+    articles: 0,
+    calls: 0,
+    mapClicks: 0,
+    visits: 0,
+  });
   const calculatorData = useMemo(() => {
     const selected = valueCalculator.find((item) => item.id === calculatorChoice) || valueCalculator[0];
     const baam = 599;
     const savings = Math.max(selected.monthlyCost - baam, 0);
     return { selected, baam, savings };
   }, [calculatorChoice]);
+  const formatCount = (value: number) => {
+    if (value >= 1000) {
+      return `${(value / 1000).toFixed(1)}K`;
+    }
+    return value.toString();
+  };
+
+  useEffect(() => {
+    let animationFrame = 0;
+    const duration = 1200;
+    const target = {
+      score: 86,
+      posts: 8,
+      videos: 2,
+      articles: 2,
+      calls: 124,
+      mapClicks: 318,
+      visits: 1600,
+    };
+    const start = performance.now();
+
+    const tick = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCounts({
+        score: Math.round(target.score * eased),
+        posts: Math.round(target.posts * eased),
+        videos: Math.round(target.videos * eased),
+        articles: Math.round(target.articles * eased),
+        calls: Math.round(target.calls * eased),
+        mapClicks: Math.round(target.mapClicks * eased),
+        visits: Math.round(target.visits * eased),
+      });
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(tick);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
 
   return (
     <>
@@ -380,7 +433,13 @@ export default function HomePage() {
       </header>
 
       <main>
-        <section id="demo" className="hero">
+        <section id="demo" className="hero hero-gradient">
+          <div className="hero-shapes">
+            <span className="shape shape-one" />
+            <span className="shape shape-two" />
+            <span className="shape shape-three" />
+            <span className="shape shape-four" />
+          </div>
           <div className="container hero-layout">
             <div>
               <span className="badge">Always-On Market Presence System</span>
@@ -395,19 +454,28 @@ export default function HomePage() {
 
               <div className="grid grid-3" style={{ marginTop: '2rem' }}>
                 <div className="card">
-                  <div className="text-subheading">🎯 You Don&apos;t Do This — We Do</div>
+                  <div className="text-subheading">
+                    <span className="icon-badge"><Target size={18} /></span>
+                    You Don&apos;t Do This — We Do
+                  </div>
                   <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                     No dashboards to operate. No content to create. We handle the weekly work.
                   </p>
                 </div>
                 <div className="card">
-                  <div className="text-subheading">📈 Results Compound Monthly</div>
+                  <div className="text-subheading">
+                    <span className="icon-badge"><TrendingUp size={18} /></span>
+                    Results Compound Monthly
+                  </div>
                   <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                     Every week of presence builds on the last: more visibility, more trust, more calls.
                   </p>
                 </div>
                 <div className="card">
-                  <div className="text-subheading">✓ Real Outcomes Tracked</div>
+                  <div className="text-subheading">
+                    <span className="icon-badge"><CheckCircle2 size={18} /></span>
+                    Real Outcomes Tracked
+                  </div>
                   <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                     Calls, map clicks, website visits, bookings—not vanity metrics.
                   </p>
@@ -436,18 +504,31 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="hero-visual">
+            <div className="hero-visual dashboard-card">
               <div className="panel">
                 <div className="panel-card">
                   <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                     Live Market Presence Overview
                   </div>
-                  <div className="text-subheading" style={{ marginTop: '0.5rem' }}>
-                    Visibility Score: 86
+                  <div className="dashboard-score">
+                    <div
+                      className="progress-ring"
+                      style={{ ['--progress' as string]: counts.score }}
+                    >
+                      <div className="progress-inner">
+                        <div className="text-subheading">{counts.score}</div>
+                        <div className="text-small" style={{ color: 'var(--text-gray)' }}>
+                          Score
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-subheading">Visibility Score</div>
+                      <p className="text-small" style={{ color: 'var(--text-gray)' }}>
+                        +12 points in the last 30 days
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-small" style={{ color: 'var(--text-gray)' }}>
-                    +12 points in the last 30 days
-                  </p>
                 </div>
                 <div className="panel-card">
                   <div className="text-small" style={{ color: 'var(--text-gray)' }}>
@@ -455,19 +536,19 @@ export default function HomePage() {
                   </div>
                   <div className="grid grid-2" style={{ gap: '0.75rem', marginTop: '0.75rem' }}>
                     <div>
-                      <div className="text-subheading">8</div>
+                      <div className="text-subheading">{counts.posts}</div>
                       <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                         Google Posts
                       </div>
                     </div>
                     <div>
-                      <div className="text-subheading">2</div>
+                      <div className="text-subheading">{counts.articles}</div>
                       <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                         SEO Articles
                       </div>
                     </div>
                     <div>
-                      <div className="text-subheading">2</div>
+                      <div className="text-subheading">{counts.videos}</div>
                       <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                         Videos
                       </div>
@@ -486,19 +567,19 @@ export default function HomePage() {
                   </div>
                   <div className="grid grid-2" style={{ gap: '0.75rem', marginTop: '0.75rem' }}>
                     <div>
-                      <div className="text-subheading">124</div>
+                      <div className="text-subheading">{counts.calls}</div>
                       <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                         Calls
                       </div>
                     </div>
                     <div>
-                      <div className="text-subheading">318</div>
+                      <div className="text-subheading">{counts.mapClicks}</div>
                       <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                         Map Clicks
                       </div>
                     </div>
                     <div>
-                      <div className="text-subheading">1.6K</div>
+                      <div className="text-subheading">{formatCount(counts.visits)}</div>
                       <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                         Site Visits
                       </div>
@@ -543,7 +624,10 @@ export default function HomePage() {
             </p>
             <div className="grid grid-3" style={{ marginTop: '2.5rem' }}>
               <div className="card">
-                <div className="text-subheading">Market Reality</div>
+                <div className="text-subheading">
+                  <span className="icon-badge"><Search size={18} /></span>
+                  Market Reality
+                </div>
                 <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                   Based on 2024–2025 local search studies (BrightLocal, Google, Moz).
                 </p>
@@ -556,7 +640,10 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="card">
-                <div className="text-subheading">No Time & No Knowledge</div>
+                <div className="text-subheading">
+                  <span className="icon-badge"><Clock size={18} /></span>
+                  No Time & No Knowledge
+                </div>
                 <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                   Most owners already know they need consistency—the problem is execution.
                 </p>
@@ -571,7 +658,10 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="card">
-                <div className="text-subheading">Agency Costs Add Up</div>
+                <div className="text-subheading">
+                  <span className="icon-badge"><BarChart3 size={18} /></span>
+                  Agency Costs Add Up
+                </div>
                 <p className="text-small" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                   Typical market pricing across multiple vendors:
                 </p>
@@ -644,11 +734,14 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-3">
-              {systemCards.map((card) => (
-                <div key={card.title} className="card">
-                  <div className="text-subheading">
-                    {card.icon} {card.title}
-                  </div>
+              {systemCards.map((card) => {
+                const Icon = card.icon;
+                return (
+                  <div key={card.title} className="card">
+                    <div className="text-subheading">
+                      <span className="icon-badge"><Icon size={18} /></span>
+                      {card.title}
+                    </div>
                   <p className="text-body" style={{ marginTop: '0.5rem', color: 'var(--text-gray)' }}>
                     {card.subtitle}
                   </p>
@@ -662,8 +755,9 @@ export default function HomePage() {
                   <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem' }}>
                     {card.result}
                   </p>
-                </div>
-              ))}
+                  </div>
+                );
+              })}
             </div>
 
             <div className="card" style={{ marginTop: '2.5rem', textAlign: 'center' }}>
@@ -686,6 +780,7 @@ export default function HomePage() {
               {deliverables.map((item) => (
                 <div key={item.title} className="card" style={{ color: 'var(--text-dark)' }}>
                   <div className="deliverable-preview">
+                    <img className="deliverable-thumb" src={item.image} alt={item.title} />
                     <div className="text-small" style={{ color: 'var(--text-gray)' }}>
                       {item.preview}
                     </div>
@@ -781,16 +876,20 @@ export default function HomePage() {
               trusted.
             </p>
             <div className="grid grid-4" style={{ marginTop: '2.5rem' }}>
-              {industries.map((industry) => (
-                <div key={industry.title} className="card">
-                  <div className="text-subheading">
-                    {industry.icon} {industry.title}
-                  </div>
+              {industries.map((industry) => {
+                const Icon = industry.icon;
+                return (
+                  <div key={industry.title} className="card">
+                    <div className="text-subheading">
+                      <span className="icon-badge"><Icon size={18} /></span>
+                      {industry.title}
+                    </div>
                   <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
                     {industry.detail}
                   </p>
-                </div>
-              ))}
+                  </div>
+                );
+              })}
             </div>
             <p className="text-body" style={{ textAlign: 'center', marginTop: '2.5rem', color: 'var(--text-gray)' }}>
               If you&apos;re competing locally and customers search before they choose—Baam is built for you.
@@ -827,10 +926,13 @@ export default function HomePage() {
                   <p className="text-body" style={{ color: 'var(--text-gray)' }}>
                     “{item.quote}”
                   </p>
-                  <div style={{ marginTop: '1rem' }}>
-                    <div className="text-subheading">{item.name}</div>
-                    <div className="text-small" style={{ color: 'var(--text-gray)' }}>
-                      {item.role} • {item.location}
+                  <div className="testimonial-meta">
+                    <img className="testimonial-avatar" src={item.avatar} alt={item.name} />
+                    <div>
+                      <div className="text-subheading">{item.name}</div>
+                      <div className="text-small" style={{ color: 'var(--text-gray)' }}>
+                        {item.role} • {item.location}
+                      </div>
                     </div>
                   </div>
                 </div>
