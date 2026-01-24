@@ -452,31 +452,31 @@ export default function HomePage() {
                 manage. Just consistent work that compounds over time.
               </p>
 
-              <div className="grid grid-3" style={{ marginTop: '2rem' }}>
-                <div className="card">
+              <div className="grid grid-3" style={{ marginTop: '2.5rem', gap: '1.5rem' }}>
+                <div className="card-elevated">
                   <div className="text-subheading">
                     <span className="icon-badge"><Target size={18} /></span>
                     You Don&apos;t Do This — We Do
                   </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
                     No dashboards to operate. No content to create. We handle the weekly work.
                   </p>
                 </div>
-                <div className="card">
+                <div className="card-elevated">
                   <div className="text-subheading">
                     <span className="icon-badge"><TrendingUp size={18} /></span>
                     Results Compound Monthly
                   </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
                     Every week of presence builds on the last: more visibility, more trust, more calls.
                   </p>
                 </div>
-                <div className="card">
+                <div className="card-elevated">
                   <div className="text-subheading">
                     <span className="icon-badge"><CheckCircle2 size={18} /></span>
                     Real Outcomes Tracked
                   </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
+                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.75rem' }}>
                     Calls, map clicks, website visits, bookings—not vanity metrics.
                   </p>
                 </div>
@@ -622,9 +622,9 @@ export default function HomePage() {
               Your potential customers are searching right now. If your business isn&apos;t showing up with fresh
               content, trust signals, and consistent activity, they&apos;re choosing someone else.
             </p>
-            <div className="grid grid-3" style={{ marginTop: '2.5rem' }}>
-              <div className="card">
-                <div className="text-subheading">
+            <div className="grid grid-3" style={{ marginTop: '3rem', gap: '2rem' }}>
+              <div className="card-bordered">
+                <div className="text-subheading" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <span className="icon-badge"><Search size={18} /></span>
                   Market Reality
                 </div>
@@ -639,8 +639,8 @@ export default function HomePage() {
                   If you’re inactive on Google and social, customers don’t see you—and don’t choose you.
                 </p>
               </div>
-              <div className="card">
-                <div className="text-subheading">
+              <div className="card-bordered">
+                <div className="text-subheading" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <span className="icon-badge"><Clock size={18} /></span>
                   No Time & No Knowledge
                 </div>
@@ -657,8 +657,8 @@ export default function HomePage() {
                   This is why good businesses still lose customers online.
                 </p>
               </div>
-              <div className="card">
-                <div className="text-subheading">
+              <div className="card-bordered">
+                <div className="text-subheading" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <span className="icon-badge"><BarChart3 size={18} /></span>
                   Agency Costs Add Up
                 </div>
@@ -920,9 +920,9 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-3" style={{ marginTop: '2.5rem' }}>
+            <div className="grid grid-3" style={{ marginTop: '3rem', gap: '2rem' }}>
               {testimonials.map((item) => (
-                <div key={item.name} className="card">
+                <div key={item.name} className="card-elevated">
                   <p className="text-body" style={{ color: 'var(--text-gray)' }}>
                     “{item.quote}”
                   </p>
@@ -1009,26 +1009,26 @@ export default function HomePage() {
             </div>
             <div className="grid grid-3" style={{ marginTop: '2.5rem' }}>
               {pricing.map((plan) => (
-                <div key={plan.title} className={`card ${plan.highlight ? 'pricing-highlight' : ''}`}>
+                <div key={plan.title} className={`card-elevated ${plan.highlight ? 'pricing-highlight' : ''}`}>
                   {plan.highlight && <div className="badge-popular">Most Popular</div>}
-                  <div className="text-subheading">{plan.title}</div>
-                  <div className="text-heading" style={{ marginTop: '0.75rem' }}>
+                  <div className="text-subheading" style={{ color: 'var(--text-dark)' }}>{plan.title}</div>
+                  <div className="text-heading" style={{ marginTop: '0.75rem', color: 'var(--text-dark)' }}>
                     {plan.price}
                   </div>
-                  <p className="text-body" style={{ color: 'var(--text-gray)' }}>
+                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '0.5rem' }}>
                     Best for: {plan.bestFor}
                   </p>
-                  <ul style={{ marginTop: '1rem', paddingLeft: '1rem', color: 'var(--text-gray)' }}>
+                  <ul style={{ marginTop: '1.5rem', paddingLeft: '1.2rem', color: 'var(--text-gray)' }}>
                     {plan.included.map((item) => (
-                      <li key={item} className="text-small" style={{ marginBottom: '0.4rem' }}>
+                      <li key={item} className="text-small" style={{ marginBottom: '0.6rem' }}>
                         ✓ {item}
                       </li>
                     ))}
                   </ul>
-                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem' }}>
+                  <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1.5rem', fontSize: '0.95rem' }}>
                     Who it&apos;s for: {plan.who}
                   </p>
-                  <button className={`btn ${plan.highlight ? 'btn-primary' : 'btn-outline'}`} style={{ marginTop: '1.5rem' }}>
+                  <button className={`btn ${plan.highlight ? 'btn-primary' : 'btn-outline'}`} style={{ marginTop: '2rem', width: '100%' }}>
                     {plan.cta}
                   </button>
                 </div>
