@@ -593,12 +593,34 @@ export default function HomePage() {
             <p className="text-small" style={{ color: 'var(--text-gray)' }}>
               Runs across the platforms your customers already trust
             </p>
-            <div className="logo-row" style={{ marginTop: '1.5rem' }}>
-              <span>Google</span>
-              <span>Meta</span>
-              <span>TikTok</span>
-              <span>YouTube</span>
-              <span>Instagram</span>
+            <div className="logo-row" style={{ marginTop: '2rem', display: 'flex', gap: '2.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+              <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style={{ height: '28px', opacity: 0.8 }} />
+              <svg width="80" height="32" viewBox="0 0 80 32" fill="none" style={{ opacity: 0.8 }}>
+                <text x="0" y="24" fontFamily="Arial, sans-serif" fontSize="24" fontWeight="bold" fill="#0866FF">Meta</text>
+              </svg>
+              <svg width="80" height="32" viewBox="0 0 80 32" fill="none" style={{ opacity: 0.8 }}>
+                <circle cx="8" cy="16" r="6" fill="#00F2EA"/>
+                <circle cx="16" cy="16" r="6" fill="#FF0050"/>
+                <text x="24" y="24" fontFamily="Arial, sans-serif" fontSize="22" fontWeight="bold" fill="#000">TikTok</text>
+              </svg>
+              <svg width="100" height="32" viewBox="0 0 100 32" fill="none" style={{ opacity: 0.8 }}>
+                <rect x="0" y="8" width="32" height="22" rx="4" fill="#FF0000"/>
+                <path d="M12 14L20 18L12 22V14Z" fill="white"/>
+                <text x="36" y="24" fontFamily="Arial, sans-serif" fontSize="20" fontWeight="500" fill="#282828">YouTube</text>
+              </svg>
+              <svg width="100" height="32" viewBox="0 0 100 32" fill="none" style={{ opacity: 0.8 }}>
+                <defs>
+                  <linearGradient id="ig-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#FFD600"/>
+                    <stop offset="50%" stopColor="#FF0069"/>
+                    <stop offset="100%" stopColor="#D300C5"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="6" width="24" height="24" rx="6" fill="url(#ig-gradient)"/>
+                <circle cx="12" cy="18" r="6" fill="none" stroke="white" strokeWidth="2"/>
+                <circle cx="19" cy="11" r="1.5" fill="white"/>
+                <text x="28" y="24" fontFamily="Arial, sans-serif" fontSize="18" fontWeight="500" fill="#262626">Instagram</text>
+              </svg>
             </div>
           </div>
         </section>
