@@ -593,34 +593,38 @@ export default function HomePage() {
             <p className="text-small" style={{ color: 'var(--text-gray)' }}>
               Runs across the platforms your customers already trust
             </p>
-            <div className="logo-row" style={{ marginTop: '2rem', display: 'flex', gap: '3.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-              <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style={{ height: '28px', opacity: 0.8 }} />
-              <svg width="80" height="32" viewBox="0 0 80 32" fill="none" style={{ opacity: 0.8 }}>
-                <text x="0" y="24" fontFamily="Arial, sans-serif" fontSize="24" fontWeight="bold" fill="#0866FF">Meta</text>
-              </svg>
-              <svg width="80" height="32" viewBox="0 0 80 32" fill="none" style={{ opacity: 0.8 }}>
-                <circle cx="8" cy="16" r="6" fill="#00F2EA"/>
-                <circle cx="16" cy="16" r="6" fill="#FF0050"/>
-                <text x="24" y="24" fontFamily="Arial, sans-serif" fontSize="22" fontWeight="bold" fill="#000">TikTok</text>
-              </svg>
-              <svg width="100" height="32" viewBox="0 0 100 32" fill="none" style={{ opacity: 0.8 }}>
-                <rect x="0" y="8" width="32" height="22" rx="4" fill="#FF0000"/>
-                <path d="M12 14L20 18L12 22V14Z" fill="white"/>
-                <text x="36" y="24" fontFamily="Arial, sans-serif" fontSize="20" fontWeight="500" fill="#282828">YouTube</text>
-              </svg>
-              <svg width="100" height="32" viewBox="0 0 100 32" fill="none" style={{ opacity: 0.8 }}>
-                <defs>
-                  <linearGradient id="ig-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#FFD600"/>
-                    <stop offset="50%" stopColor="#FF0069"/>
-                    <stop offset="100%" stopColor="#D300C5"/>
-                  </linearGradient>
-                </defs>
-                <rect x="0" y="6" width="24" height="24" rx="6" fill="url(#ig-gradient)"/>
-                <circle cx="12" cy="18" r="6" fill="none" stroke="white" strokeWidth="2"/>
-                <circle cx="19" cy="11" r="1.5" fill="white"/>
-                <text x="28" y="24" fontFamily="Arial, sans-serif" fontSize="18" fontWeight="500" fill="#262626">Instagram</text>
-              </svg>
+            <div className="logo-row" style={{ marginTop: '2rem', display: 'flex', gap: '3rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+              <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style={{ height: '26px', opacity: 0.85 }} />
+              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0866FF', opacity: 0.85 }}>Meta</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', opacity: 0.85 }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" fill="#00F2EA"/>
+                  <circle cx="12" cy="12" r="6" fill="#FF0050"/>
+                </svg>
+                <span style={{ fontSize: '1.4rem', fontWeight: 700, color: '#000' }}>TikTok</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', opacity: 0.85 }}>
+                <svg width="32" height="24" viewBox="0 0 32 24">
+                  <rect width="32" height="24" rx="4" fill="#FF0000"/>
+                  <path d="M12 8L22 14L12 20V8Z" fill="white"/>
+                </svg>
+                <span style={{ fontSize: '1.35rem', fontWeight: 600, color: '#282828' }}>YouTube</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', opacity: 0.85 }}>
+                <svg width="28" height="28" viewBox="0 0 28 28">
+                  <defs>
+                    <linearGradient id="ig-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#FED373"/>
+                      <stop offset="50%" stopColor="#F15245"/>
+                      <stop offset="100%" stopColor="#D92E7F"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="28" height="28" rx="7" fill="url(#ig-grad)"/>
+                  <circle cx="14" cy="14" r="7" fill="none" stroke="white" strokeWidth="2.5"/>
+                  <circle cx="21" cy="7" r="2" fill="white"/>
+                </svg>
+                <span style={{ fontSize: '1.3rem', fontWeight: 600, color: '#262626' }}>Instagram</span>
+              </div>
             </div>
           </div>
         </section>
