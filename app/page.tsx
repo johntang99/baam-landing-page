@@ -593,7 +593,7 @@ export default function HomePage() {
             <p className="text-small" style={{ color: 'var(--text-gray)' }}>
               Runs across the platforms your customers already trust
             </p>
-            <div className="logo-row" style={{ marginTop: '2rem', display: 'flex', gap: '2.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div className="logo-row" style={{ marginTop: '2rem', display: 'flex', gap: '3.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
               <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style={{ height: '28px', opacity: 0.8 }} />
               <svg width="80" height="32" viewBox="0 0 80 32" fill="none" style={{ opacity: 0.8 }}>
                 <text x="0" y="24" fontFamily="Arial, sans-serif" fontSize="24" fontWeight="bold" fill="#0866FF">Meta</text>

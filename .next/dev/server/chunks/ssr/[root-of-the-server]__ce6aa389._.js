@@ -1232,7 +1232,7 @@ function HomePage() {
                                     style: {
                                         marginTop: '2rem',
                                         display: 'flex',
-                                        gap: '2.5rem',
+                                        gap: '3.5rem',
                                         justifyContent: 'center',
                                         alignItems: 'center',
                                         flexWrap: 'wrap'
