@@ -856,7 +856,7 @@ export default function HomePage() {
               If customers search for you, reviews matter, and you&apos;re competing locally—Baam keeps you visible and
               trusted.
             </p>
-            <div className="grid grid-4" style={{ marginTop: '2.5rem' }}>
+            <div style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
               {industries.map((industry) => {
                 const Icon = industry.icon;
                 return (
