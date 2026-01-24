@@ -807,33 +807,35 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <div className="grid grid-2" style={{ marginTop: '3rem', gap: '2rem' }}>
+            <div className="timeline" style={{ marginTop: '2.5rem' }}>
               {timeline.map((stage) => (
-                <div key={stage.title} className="card-bordered">
+                <div key={stage.title} className="timeline-item">
                   <div className="text-subheading">{stage.title}</div>
-                  <div style={{ marginTop: '1.5rem' }}>
-                    <div className="text-body" style={{ color: '#475569', fontWeight: 600, marginBottom: '0.75rem' }}>
-                      What happens:
+                  <div className="grid grid-2" style={{ marginTop: '1rem' }}>
+                    <div>
+                      <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
+                        What happens:
+                      </div>
+                      <ul style={{ marginTop: '0.75rem', paddingLeft: '1.2rem' }}>
+                        {stage.work.map((item) => (
+                          <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <ul style={{ paddingLeft: '1.2rem' }}>
-                      {stage.work.map((item) => (
-                        <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div style={{ marginTop: '1.5rem' }}>
-                    <div className="text-body" style={{ color: '#475569', fontWeight: 600, marginBottom: '0.75rem' }}>
-                      Results:
+                    <div>
+                      <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
+                        Results:
+                      </div>
+                      <ul style={{ marginTop: '0.75rem', paddingLeft: '1.2rem' }}>
+                        {stage.results.map((item) => (
+                          <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <ul style={{ paddingLeft: '1.2rem' }}>
-                      {stage.results.map((item) => (
-                        <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 </div>
               ))}
