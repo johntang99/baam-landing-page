@@ -590,9 +590,11 @@ function HomePage() {
                                                     marginTop: '1.2rem',
                                                     color: '#ffffff',
                                                     background: 'none',
-                                                    WebkitTextFillColor: '#ffffff'
+                                                    WebkitTextFillColor: '#ffffff',
+                                                    fontSize: '3.5rem',
+                                                    lineHeight: '1.15'
                                                 },
-                                                children: "Your Business Deserves to Be Recognized—Not Just Seen"
+                                                children: "Your business shouldn't disappear between busy weeks"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 446,
@@ -601,12 +603,13 @@ function HomePage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-body",
                                                 style: {
-                                                    marginTop: '1.2rem',
-                                                    color: 'rgba(255, 255, 255, 0.85)',
-                                                    lineHeight: '1.8',
-                                                    maxWidth: '720px'
+                                                    marginTop: '1.5rem',
+                                                    color: 'rgba(255, 255, 255, 0.9)',
+                                                    lineHeight: '1.75',
+                                                    maxWidth: '680px',
+                                                    fontSize: '1.25rem'
                                                 },
-                                                children: "BAAM is a local demand matching system that keeps your business consistently present where local decisions are actually made. Not louder marketing. Not broader reach. Just reliable, repeated presence that builds trust over time."
+                                                children: "BAAM keeps local businesses continuously visible where real decisions are made—without constant marketing effort."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 449,
@@ -617,10 +620,10 @@ function HomePage() {
                                                 style: {
                                                     marginTop: '1rem',
                                                     color: 'rgba(255, 255, 255, 0.75)',
-                                                    lineHeight: '1.8',
-                                                    maxWidth: '720px'
+                                                    lineHeight: '1.75',
+                                                    maxWidth: '680px'
                                                 },
-                                                children: "We run your visibility system across Google, social media, video, and your website—continuously. You focus on your business. We ensure customers can find you, trust you, and choose you."
+                                                children: "BAAM is an always-on operating system for local presence. It quietly maintains visibility, credibility, and consistency across search, maps, content, and discovery surfaces."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 452,
@@ -730,16 +733,17 @@ function HomePage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "grid grid-2",
                                                 style: {
                                                     marginTop: '2.5rem',
-                                                    gap: '1rem'
+                                                    display: 'flex',
+                                                    gap: '1rem',
+                                                    flexWrap: 'wrap'
                                                 },
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         className: "btn btn-primary btn-lg",
                                                         href: "#preview",
-                                                        children: "Get Free Market Presence Preview"
+                                                        children: "Get Started"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
                                                         lineNumber: 478,
@@ -748,7 +752,7 @@ function HomePage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         className: "btn btn-light btn-lg",
                                                         href: "#demo",
-                                                        children: "Explore Live Demo Dashboard"
+                                                        children: "See How It Works →"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
                                                         lineNumber: 481,

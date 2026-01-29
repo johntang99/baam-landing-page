@@ -443,14 +443,14 @@ export default function HomePage() {
           <div className="container hero-layout">
             <div>
               <span className="badge" style={{ background: 'var(--mist-blue)', color: 'var(--steel-blue)', border: '1px solid rgba(47, 75, 106, 0.2)' }}>Local Demand Matching System</span>
-              <h1 className="text-display" style={{ marginTop: '1.2rem', color: '#ffffff', background: 'none', WebkitTextFillColor: '#ffffff' }}>
-                Your Business Deserves to Be Recognized—Not Just Seen
+              <h1 className="text-display" style={{ marginTop: '1.2rem', color: '#ffffff', background: 'none', WebkitTextFillColor: '#ffffff', fontSize: '3.5rem', lineHeight: '1.15' }}>
+                Your business shouldn't disappear between busy weeks
               </h1>
-              <p className="text-body" style={{ marginTop: '1.2rem', color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.8', maxWidth: '720px' }}>
-                BAAM is a local demand matching system that keeps your business consistently present where local decisions are actually made. Not louder marketing. Not broader reach. Just reliable, repeated presence that builds trust over time.
+              <p className="text-body" style={{ marginTop: '1.5rem', color: 'rgba(255, 255, 255, 0.9)', lineHeight: '1.75', maxWidth: '680px', fontSize: '1.25rem' }}>
+                BAAM keeps local businesses continuously visible where real decisions are made—without constant marketing effort.
               </p>
-              <p className="text-body" style={{ marginTop: '1rem', color: 'rgba(255, 255, 255, 0.75)', lineHeight: '1.8', maxWidth: '720px' }}>
-                We run your visibility system across Google, social media, video, and your website—continuously. You focus on your business. We ensure customers can find you, trust you, and choose you.
+              <p className="text-body" style={{ marginTop: '1rem', color: 'rgba(255, 255, 255, 0.75)', lineHeight: '1.75', maxWidth: '680px' }}>
+                BAAM is an always-on operating system for local presence. It quietly maintains visibility, credibility, and consistency across search, maps, content, and discovery surfaces.
               </p>
 
               <div className="grid grid-2" style={{ marginTop: '2.5rem', gap: '1.5rem' }}>
@@ -474,12 +474,12 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="grid grid-2" style={{ marginTop: '2.5rem', gap: '1rem' }}>
+              <div style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a className="btn btn-primary btn-lg" href="#preview">
-                  Get Free Market Presence Preview
+                  Get Started
                 </a>
                 <a className="btn btn-light btn-lg" href="#demo">
-                  Explore Live Demo Dashboard
+                  See How It Works →
                 </a>
               </div>
               <div style={{ marginTop: '1.2rem' }}>
