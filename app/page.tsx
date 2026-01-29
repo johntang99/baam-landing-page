@@ -678,13 +678,14 @@ export default function HomePage() {
 
         <section id="how-it-works" className="section">
           <div className="container">
-            <span className="badge">How Baam Works</span>
-            <h2 className="text-heading" style={{ marginTop: '1rem' }}>
-              Market Presence = Growth Engine
+            <h2 className="text-heading" style={{ marginTop: '0', textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
+              BAAM exists to stop that quiet decay
             </h2>
-            <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', maxWidth: '850px' }}>
-              Baam isn&apos;t a campaign or a tool. It&apos;s a complete system with three connected parts that run
-              continuously—weekly work that drives monthly results.
+            <p className="text-body" style={{ color: '#475569', marginTop: '1.5rem', maxWidth: '720px', margin: '1.5rem auto 0', textAlign: 'center', fontWeight: 500, fontSize: '1.125rem' }}>
+              Not to make you louder. Not to run campaigns. Not to add another tool.
+            </p>
+            <p className="text-body" style={{ color: '#475569', marginTop: '1rem', maxWidth: '720px', margin: '1rem auto 0', textAlign: 'center', fontWeight: 600, fontSize: '1.2rem' }}>
+              Just to make sure your business stays present while you&apos;re busy running it.
             </p>
 
             <div className="system-diagram">
@@ -760,10 +761,13 @@ export default function HomePage() {
         <section id="services" className="section bg-gradient">
           <div className="container">
             <h2 className="text-heading" style={{ color: '#fff' }}>
-              What Runs for You Every Month
+              What BAAM Does Every Week
             </h2>
-            <p className="text-body" style={{ color: 'rgba(255,255,255,0.9)', marginTop: '1rem', maxWidth: '820px' }}>
-              Clear, predictable work. No surprises. This is what $599/month delivers—continuously.
+            <p className="text-body" style={{ color: 'rgba(255,255,255,0.9)', marginTop: '1rem', maxWidth: '720px', fontSize: '1.125rem' }}>
+              While you focus on your business, BAAM quietly maintains your baseline.
+            </p>
+            <p className="text-body" style={{ color: 'rgba(255,255,255,0.75)', marginTop: '0.75rem', maxWidth: '720px' }}>
+              No daily posting. No dashboards to babysit. No reminders to chase.
             </p>
             <div className="grid grid-4" style={{ marginTop: '2.5rem' }}>
               {deliverables.map((item) => (
@@ -799,10 +803,9 @@ export default function HomePage() {
 
         <section className="section">
           <div className="container">
-            <h2 className="text-heading">Real Market Presence Compounds—Here&apos;s What to Expect</h2>
-            <p className="text-body" style={{ marginTop: '1rem', color: 'var(--text-gray)', maxWidth: '820px' }}>
-              Baam doesn&apos;t promise instant rankings. We build sustainable visibility and trust that grows stronger
-              every month.
+            <h2 className="text-heading" style={{ textAlign: 'center' }}>Stable Presence Compounds</h2>
+            <p className="text-body" style={{ marginTop: '1.5rem', color: '#475569', maxWidth: '720px', margin: '1.5rem auto 0', textAlign: 'center', fontWeight: 500 }}>
+              Local visibility doesn&apos;t spike. It accumulates. Each appearance reinforces memory. Each interaction reduces friction. Each quiet signal builds confidence.
             </p>
             <div className="timeline-progress" style={{ marginTop: '2rem' }}>
               {timeline.map((stage, index) => (
