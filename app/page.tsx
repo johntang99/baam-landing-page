@@ -214,26 +214,29 @@ const testimonials = [
   {
     quote:
       "Before Baam, I was invisible on Google. Now I'm in the top 3 for every search that matters. Calls are up 60% and I don't touch the marketing.",
-    name: 'Sarah M.',
-    role: 'Family Medicine Clinic',
+    name: 'Sarah Martinez',
+    role: 'Owner, Martinez Family Dental',
     location: 'Middletown, NY',
-    avatar: 'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80',
+    results: '+85% Visibility | +60% Calls | 6 Months',
   },
   {
     quote:
       'I tried doing social media myself for 6 months and gave up. Baam handles everything—posts, videos, Google—and I actually see results. Worth every dollar.',
-    name: 'Mike R.',
-    role: 'HVAC Company',
+    name: 'Mike Rodriguez',
+    role: 'Owner, Rodriguez HVAC',
     location: 'Orange County, NY',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=200&q=80',
+    results: '+72% Visibility | 4 Months',
   },
   {
     quote:
       'We were spending $1,200/month on ads with no long-term value. Baam costs half that, builds assets that last, and brings more qualified leads.',
-    name: 'Jennifer K.',
-    role: 'Law Firm',
+    name: 'Jennifer Kim',
+    role: 'Partner, Kim & Associates Law Firm',
     location: 'Hudson Valley, NY',
-    avatar: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80',
+    results: '+65% Visibility | 8 Months',
   },
 ];
 
@@ -637,8 +640,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section bg-light">
-          <div className="container">
+        <section className="section bg-light" style={{ position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '400px', opacity: 0.03, backgroundImage: 'url(https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }}></div>
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <h2 className="text-heading" style={{ marginTop: '0', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
               Most local businesses don&apos;t lose customers. They fall out of the decision path before choices are made.
             </h2>
@@ -914,16 +918,27 @@ export default function HomePage() {
             <div className="grid grid-3" style={{ marginTop: '3rem', gap: '2rem' }}>
               {testimonials.map((item) => (
                 <div key={item.name} className="card-elevated">
-                  <p className="text-body" style={{ color: 'var(--text-gray)' }}>
-                    “{item.quote}”
+                  <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '1rem' }}>
+                    {[1,2,3,4,5].map(i => <span key={i} style={{ color: '#F59E0B', fontSize: '1.25rem' }}>★</span>)}
+                  </div>
+                  <p className="text-body" style={{ color: '#475569', fontStyle: 'italic', fontWeight: 500 }}>
+                    "{item.quote}"
                   </p>
                   <div className="testimonial-meta">
                     <img className="testimonial-avatar" src={item.avatar} alt={item.name} />
                     <div>
                       <div className="text-subheading">{item.name}</div>
-                      <div className="text-small" style={{ color: 'var(--text-gray)' }}>
-                        {item.role} • {item.location}
+                      <div className="text-body" style={{ color: '#475569', fontSize: '0.95rem' }}>
+                        {item.role}
                       </div>
+                      <div className="text-small" style={{ color: 'var(--text-gray)' }}>
+                        {item.location}
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid rgba(143, 143, 143, 0.15)' }}>
+                    <div className="badge" style={{ background: 'var(--mist-blue)', color: 'var(--steel-blue)', fontSize: '0.85rem' }}>
+                      {item.results}
                     </div>
                   </div>
                 </div>
