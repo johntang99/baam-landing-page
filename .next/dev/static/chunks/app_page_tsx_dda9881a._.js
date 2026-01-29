@@ -191,7 +191,7 @@ const industries = [
         detail: 'Salons • Spas • Med Spas • Fitness Studios • Yoga • Massage'
     },
     {
-        photo: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=80',
+        photo: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80',
         title: 'Professional Services',
         detail: 'Law Firms • Accounting • Insurance • Financial Advisors • Real Estate'
     },
