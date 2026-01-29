@@ -380,12 +380,13 @@ img {
 .nav-links {
   display: flex;
   gap: 1.6rem;
-  color: var(--text-gray);
+  color: var(--primary-black);
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: var(--text-dark);
+  color: var(--steel-blue);
 }
 
 .hero {
