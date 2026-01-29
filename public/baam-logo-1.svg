@@ -1,0 +1,10 @@
+<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- BAAM text -->
+  <text x="10" y="45" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#0f172a">BAAM</text>
+  
+  <!-- Wavy underline -->
+  <path d="M 10 55 Q 30 50, 50 55 T 90 55 T 130 55 T 170 55" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  
+  <!-- Tagline -->
+  <text x="10" y="75" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#64748b">Always On. Always Visible.</text>
+</svg>
