@@ -639,11 +639,11 @@ export default function HomePage() {
 
         <section className="section bg-light">
           <div className="container">
-            <span className="badge">Market Reality & Business Owners' Pain Points</span>
-            <h2 className="text-heading" style={{ marginTop: '1rem' }}>Most Local Businesses Stay Invisible—Not Because They&apos;re Bad, But Because They&apos;re Inconsistent</h2>
-            <p className="text-body" style={{ color: 'var(--text-gray)', marginTop: '1rem', maxWidth: '820px' }}>
-              Your potential customers are searching right now. If your business isn&apos;t showing up with fresh
-              content, trust signals, and consistent activity, they&apos;re choosing someone else.
+            <h2 className="text-heading" style={{ marginTop: '0', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+              Most local businesses don&apos;t lose customers. They fall out of the decision path before choices are made.
+            </h2>
+            <p className="text-body" style={{ color: '#475569', marginTop: '1.5rem', maxWidth: '720px', margin: '1.5rem auto 0', textAlign: 'center', fontWeight: 500 }}>
+              You didn&apos;t stop caring. You didn&apos;t stop providing great service. But online, consistency quietly broke down.
             </p>
             <div className="grid grid-3" style={{ marginTop: '3rem', gap: '2rem' }}>
               <div className="card-bordered">

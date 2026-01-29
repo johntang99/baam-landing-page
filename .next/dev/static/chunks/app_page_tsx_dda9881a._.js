@@ -1596,36 +1596,34 @@ function HomePage() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "container",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "badge",
-                                    children: "Market Reality & Business Owners' Pain Points"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-heading",
+                                    style: {
+                                        marginTop: '0',
+                                        maxWidth: '900px',
+                                        margin: '0 auto',
+                                        textAlign: 'center'
+                                    },
+                                    children: "Most local businesses don't lose customers. They fall out of the decision path before choices are made."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 642,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-heading",
-                                    style: {
-                                        marginTop: '1rem'
-                                    },
-                                    children: "Most Local Businesses Stay Invisible—Not Because They're Bad, But Because They're Inconsistent"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.tsx",
-                                    lineNumber: 643,
-                                    columnNumber: 13
-                                }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-body",
                                     style: {
-                                        color: 'var(--text-gray)',
-                                        marginTop: '1rem',
-                                        maxWidth: '820px'
+                                        color: '#475569',
+                                        marginTop: '1.5rem',
+                                        maxWidth: '720px',
+                                        margin: '1.5rem auto 0',
+                                        textAlign: 'center',
+                                        fontWeight: 500
                                     },
-                                    children: "Your potential customers are searching right now. If your business isn't showing up with fresh content, trust signals, and consistent activity, they're choosing someone else."
+                                    children: "You didn't stop caring. You didn't stop providing great service. But online, consistency quietly broke down."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 644,
+                                    lineNumber: 645,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
