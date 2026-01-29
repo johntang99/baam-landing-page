@@ -1147,22 +1147,18 @@ export default function HomePage() {
 
         <section id="preview" className="section bg-gradient">
           <div className="container" style={{ textAlign: 'center' }}>
-            <h2 className="text-heading">Your Market Presence Should Be Working for You Right Now</h2>
-            <p className="text-body" style={{ marginTop: '1rem', color: 'rgba(255,255,255,0.9)' }}>
-              Stop waiting for customers to find you by accident. Baam runs your visibility system—Google, content,
-              social, video—every single week. You focus on your business. We handle the rest.
+            <h2 className="text-heading">You don't need to do more. You need things to stop breaking.</h2>
+            <p className="text-body" style={{ marginTop: '1.5rem', color: 'rgba(255,255,255,0.9)', fontSize: '1.125rem' }}>
+              If your business deserves to be chosen more often — BAAM helps make that happen, quietly and consistently.
             </p>
-            <div className="grid grid-2" style={{ marginTop: '2rem' }}>
-              <a className="btn btn-light" href="#demo">
-                Explore Live Demo Dashboard
+            <div style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a className="btn btn-light btn-lg" href="#preview">
+                Talk to Us
               </a>
-              <a className="btn btn-outline" href="#preview" style={{ borderColor: 'rgba(255,255,255,0.6)', color: '#fff' }}>
-                Get Free Market Presence Preview
+              <a className="btn btn-outline btn-lg" href="#demo" style={{ borderColor: 'rgba(255,255,255,0.5)', color: '#fff' }}>
+                See If BAAM Is a Fit →
               </a>
             </div>
-            <p className="text-small" style={{ marginTop: '1.5rem', color: 'rgba(255,255,255,0.8)' }}>
-              No sales calls required. See how it works, then decide.
-            </p>
           </div>
         </section>
       </main>
