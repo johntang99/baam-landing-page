@@ -167,48 +167,48 @@ const timeline = [
       'Reduced reliance on ads',
       'Authority in local market',
     ],
-    photo: 'https://images.unsplash.com/photo-1553484771-047a44eee27b?w=600&q=80',
+    photo: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80',
   },
 ];
 
 const industries = [
   {
-    icon: Stethoscope,
+    photo: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=400&q=80',
     title: 'Medical & Healthcare',
     detail: 'Primary Care • Urgent Care • Physical Therapy • Chiropractors • Dental Clinics',
   },
   {
-    icon: Wrench,
+    photo: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80',
     title: 'Home Services',
     detail: 'HVAC • Plumbing • Electrical • Roofing • Landscaping • Tree Service',
   },
   {
-    icon: UtensilsCrossed,
+    photo: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80',
     title: 'Restaurants & Food',
     detail: 'Casual Dining • Fast Casual • Cafes • Bakeries • Catering',
   },
   {
-    icon: Sparkles,
+    photo: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&q=80',
     title: 'Beauty & Wellness',
     detail: 'Salons • Spas • Med Spas • Fitness Studios • Yoga • Massage',
   },
   {
-    icon: BriefcaseBusiness,
+    photo: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=80',
     title: 'Professional Services',
     detail: 'Law Firms • Accounting • Insurance • Financial Advisors • Real Estate',
   },
   {
-    icon: ShoppingBag,
+    photo: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80',
     title: 'Retail & Shops',
     detail: 'Boutiques • Specialty Stores • Pet Shops • Florists • Gift Shops',
   },
   {
-    icon: Car,
+    photo: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&q=80',
     title: 'Auto Services',
     detail: 'Auto Repair • Detailing • Body Shops • Tire Services • Oil Change',
   },
   {
-    icon: Scissors,
+    photo: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&q=80',
     title: 'Personal Services',
     detail: 'Barbers • Cleaners • Pet Grooming • Tutoring • Photography',
   },
@@ -881,18 +881,19 @@ export default function HomePage() {
               trusted.
             </p>
             <div style={{ marginTop: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
-              {industries.map((industry) => {
-                const Icon = industry.icon;
-                return (
-                  <div key={industry.title} className="card-bordered">
-                    <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Icon size={20} /></span>
-                    <div className="text-subheading">{industry.title}</div>
-                  <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
-                    {industry.detail}
-                  </p>
+              {industries.map((industry) => (
+                <div key={industry.title} className="card-bordered" style={{ padding: 0, overflow: 'hidden' }}>
+                  <div style={{ aspectRatio: '16/9', overflow: 'hidden' }}>
+                    <img src={industry.photo} alt={industry.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
-                );
-              })}
+                  <div style={{ padding: '1.5rem' }}>
+                    <div className="text-subheading">{industry.title}</div>
+                    <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
+                      {industry.detail}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
             <p className="text-body" style={{ textAlign: 'center', marginTop: '2.5rem', color: 'var(--text-gray)' }}>
               If you&apos;re competing locally and customers search before they choose—Baam is built for you.

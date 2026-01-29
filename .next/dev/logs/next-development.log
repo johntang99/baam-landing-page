@@ -77,3 +77,15 @@ Import traces:
 [01:43:05.786] Server  LOG     ✓ Compiled in 50ms
 [01:52:16.405] Server  LOG     ✓ Compiled in 23ms
 [01:53:01.048] Server  LOG     ✓ Compiled in 55ms
+[01:56:35.340] Server  LOG     ✓ Compiled in 28ms
+[02:11:20.088] Server  LOG     ✓ Compiled in 90ms
+[02:11:21.128] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `HomePage`.
+[02:11:21.128] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `HomePage`.
+[02:11:57.120] Server  LOG     ✓ Compiled in 50ms
+[02:11:57.137] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:11:57.162] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:11:57.905] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
