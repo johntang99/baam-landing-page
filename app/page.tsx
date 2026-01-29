@@ -787,14 +787,6 @@ export default function HomePage() {
                 <div key={item.title} className="card-bordered" style={{ color: 'var(--text-dark)' }}>
                   <div className="deliverable-preview">
                     <img className="deliverable-thumb" src={item.image} alt={item.title} />
-                    <div className="text-body" style={{ color: '#475569', fontWeight: 500 }}>
-                      {item.preview}
-                    </div>
-                    <div className="preview-bars">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
                   </div>
                   <div className="text-subheading" style={{ marginTop: '1rem' }}>{item.title}</div>
                   <ul style={{ marginTop: '1rem', paddingLeft: 0, listStyle: 'none' }}>
