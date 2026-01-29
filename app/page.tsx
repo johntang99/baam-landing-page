@@ -442,14 +442,15 @@ export default function HomePage() {
           </div>
           <div className="container hero-layout">
             <div>
-              <span className="badge" style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24', border: '1px solid rgba(245, 158, 11, 0.3)' }}>Always-On Market Presence System</span>
+              <span className="badge" style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24', border: '1px solid rgba(245, 158, 11, 0.3)' }}>Local Demand Matching System</span>
               <h1 className="text-display" style={{ marginTop: '1.2rem', color: '#ffffff', background: 'none', WebkitTextFillColor: '#ffffff' }}>
-                Your Business Should Be Growing Every Week. Let Baam Handle It.
+                Your Business Deserves to Be Recognized—Not Just Seen
               </h1>
-              <p className="text-body" style={{ marginTop: '1.2rem', color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.8' }}>
-                We run your market presence across Google, social, video, and your website—continuously—so
-                customers can find you, trust you, and choose you. No tools to learn. No campaigns to
-                manage. Just consistent work that compounds over time.
+              <p className="text-body" style={{ marginTop: '1.2rem', color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.8', maxWidth: '720px' }}>
+                BAAM is a local demand matching system that keeps your business consistently present where local decisions are actually made. Not louder marketing. Not broader reach. Just reliable, repeated presence that builds trust over time.
+              </p>
+              <p className="text-body" style={{ marginTop: '1rem', color: 'rgba(255, 255, 255, 0.75)', lineHeight: '1.8', maxWidth: '720px' }}>
+                We run your visibility system across Google, social media, video, and your website—continuously. You focus on your business. We ensure customers can find you, trust you, and choose you.
               </p>
 
               <div className="grid grid-2" style={{ marginTop: '2.5rem', gap: '1.5rem' }}>
@@ -486,12 +487,19 @@ export default function HomePage() {
                   View Pricing →
                 </a>
               </div>
-              <div className="stats-row text-small" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-                <span>Trusted by 2,400+ local businesses</span>
-                <span>•</span>
-                <span>124,000+ calls tracked</span>
-                <span>•</span>
-                <span>4.9/5 client satisfaction</span>
+              <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.95rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <CheckCircle2 size={16} />
+                  <span>2,400+ local businesses trust BAAM</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <CheckCircle2 size={16} />
+                  <span>87% average visibility increase in 6 months</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <CheckCircle2 size={16} />
+                  <span>No contracts • You own all content • Month-to-month</span>
+                </div>
               </div>
             </div>
 
