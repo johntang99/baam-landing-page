@@ -25,3 +25,51 @@
 [00:59:30.447] Server  LOG     ✓ Compiled in 53ms
 [01:05:34.313] Server  LOG     ✓ Compiled in 56ms
 [01:06:06.292] Server  LOG     ✓ Compiled in 40ms
+[01:24:34.521] Server  LOG     ✓ Compiled in 83ms
+[01:24:35.128] Browser ERROR   ./app/page.tsx:689:17
+Parsing ecmascript source code failed
+  687 |               </p>
+  688 |             </div>
+> 689 |           </div>
+      |                 ^
+> 690 |         </section>
+      | ^^^^^^^^^
+  691 |
+  692 |         <section id="how-it-works" className="section">
+  693 |           <div className="container">
+
+Expected '</', got 'jsx text (
+        )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:24:35.128] Browser ERROR   ./app/page.tsx:689:17
+Parsing ecmascript source code failed
+  687 |               </p>
+  688 |             </div>
+> 689 |           </div>
+      |                 ^
+> 690 |         </section>
+      | ^^^^^^^^^
+  691 |
+  692 |         <section id="how-it-works" className="section">
+  693 |           <div className="container">
+
+Expected '</', got 'jsx text (
+        )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:27:12.292] Server  LOG     ✓ Compiled in 57ms

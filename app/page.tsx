@@ -640,33 +640,42 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section bg-light" style={{ position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '400px', opacity: 0.03, backgroundImage: 'url(https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }}></div>
-          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <h2 className="text-heading" style={{ marginTop: '0', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-              Most local businesses don&apos;t lose customers. They fall out of the decision path before choices are made.
-            </h2>
-            <p className="text-body" style={{ color: '#475569', marginTop: '1.5rem', maxWidth: '720px', margin: '1.5rem auto 0', textAlign: 'center', fontWeight: 500 }}>
-              You didn&apos;t stop caring. You didn&apos;t stop providing great service. But online, consistency quietly broke down.
-            </p>
-            <div className="grid grid-4" style={{ marginTop: '3rem', gap: '1.5rem', maxWidth: '900px', margin: '3rem auto 0' }}>
-              <div className="card-bordered" style={{ textAlign: 'center' }}>
-                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Listings stop getting updated</p>
+        <section className="section bg-light">
+          <div className="container">
+            <div style={{ background: '#fff', borderRadius: '24px', padding: '4rem', boxShadow: '0 20px 60px rgba(18, 18, 18, 0.08)', border: '1px solid rgba(143, 143, 143, 0.1)' }}>
+              <h2 className="text-heading" style={{ marginTop: '0', marginBottom: '2rem', textAlign: 'center' }}>
+                Most local businesses don&apos;t lose customers. They fall out of the decision path before choices are made.
+              </h2>
+              <p className="text-body" style={{ color: '#475569', marginBottom: '3rem', textAlign: 'center', fontWeight: 500 }}>
+                You didn&apos;t stop caring. You didn&apos;t stop providing great service. But online, consistency quietly broke down.
+              </p>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div className="card-bordered">
+                    <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Listings stop getting updated</p>
+                  </div>
+                  <div className="card-bordered">
+                    <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Social channels go silent</p>
+                  </div>
+                  <div className="card-bordered">
+                    <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Content becomes irregular</p>
+                  </div>
+                  <div className="card-bordered">
+                    <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Presence fades between busy weeks</p>
+                  </div>
+                </div>
+                <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 12px 40px rgba(18, 18, 18, 0.12)' }}>
+                  <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80" alt="Business owner searching" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                </div>
               </div>
-              <div className="card-bordered" style={{ textAlign: 'center' }}>
-                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Social channels go silent</p>
-              </div>
-              <div className="card-bordered" style={{ textAlign: 'center' }}>
-                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Content becomes irregular</p>
-              </div>
-              <div className="card-bordered" style={{ textAlign: 'center' }}>
-                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Presence fades between busy weeks</p>
-              </div>
+              
+              <p className="text-body" style={{ color: '#475569', marginTop: '3rem', textAlign: 'center', fontWeight: 500, fontSize: '1.125rem' }}>
+                And when customers need something — they choose the business that feels familiar, not necessarily the best one.
+              </p>
             </div>
-            <p className="text-body" style={{ color: '#475569', marginTop: '2rem', maxWidth: '680px', margin: '2rem auto 0', textAlign: 'center', fontWeight: 500, fontSize: '1.125rem' }}>
-              And when customers need something — they choose the business that feels familiar, not necessarily the best one.
-            </p>
-            <div className="card-elevated" style={{ marginTop: '3rem', padding: '3rem', textAlign: 'center', maxWidth: '800px', margin: '3rem auto 0', background: 'linear-gradient(135deg, var(--mist-blue), var(--off-white))' }}>
+            
+            <div className="card-elevated" style={{ marginTop: '3rem', padding: '3rem', textAlign: 'center', background: 'linear-gradient(135deg, var(--mist-blue), var(--off-white))' }}>
               <p className="text-heading" style={{ color: 'var(--steel-blue)', marginBottom: '1rem' }}>
                 80%
               </p>
