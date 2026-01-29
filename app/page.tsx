@@ -645,58 +645,32 @@ export default function HomePage() {
             <p className="text-body" style={{ color: '#475569', marginTop: '1.5rem', maxWidth: '720px', margin: '1.5rem auto 0', textAlign: 'center', fontWeight: 500 }}>
               You didn&apos;t stop caring. You didn&apos;t stop providing great service. But online, consistency quietly broke down.
             </p>
-            <div className="grid grid-3" style={{ marginTop: '3rem', gap: '2rem' }}>
-              <div className="card-bordered">
-                <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Search size={20} /></span>
-                <div className="text-subheading">Market Reality</div>
-                <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
-                  Based on 2024–2025 local search studies (BrightLocal, Google, Moz).
-                </p>
-                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem' }}>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>70–80% of local searches happen on Google Search + Google Maps</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>20–30% discover businesses via Facebook, Instagram, YouTube, TikTok</li>
-                </ul>
-                <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
-                  If you're inactive on Google and social, customers don't see you—and don't choose you.
-                </p>
+            <div className="grid grid-4" style={{ marginTop: '3rem', gap: '1.5rem', maxWidth: '900px', margin: '3rem auto 0' }}>
+              <div className="card-bordered" style={{ textAlign: 'center' }}>
+                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Listings stop getting updated</p>
               </div>
-              <div className="card-bordered">
-                <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><Clock size={20} /></span>
-                <div className="text-subheading">No Time & No Knowledge</div>
-                <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
-                  Most owners already know they need consistency—the problem is execution.
-                </p>
-                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem' }}>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>No time to manage GBP or create content</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>Unclear what content actually works</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>Websites rarely updated, rankings slip</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>Inactive social + GBP → no exposure, no trust</li>
-                </ul>
-                <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
-                  This is why good businesses still lose customers online.
-                </p>
+              <div className="card-bordered" style={{ textAlign: 'center' }}>
+                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Social channels go silent</p>
               </div>
-              <div className="card-bordered">
-                <span className="icon-badge" style={{ marginRight: 0, marginBottom: '1rem' }}><BarChart3 size={20} /></span>
-                <div className="text-subheading">Agency Costs Add Up</div>
-                <p className="text-body" style={{ color: '#475569', marginTop: '0.75rem', fontWeight: 500 }}>
-                  Typical market pricing across multiple vendors:
-                </p>
-                <ul style={{ marginTop: '1rem', paddingLeft: '1.2rem' }}>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>Website + SEO setup: $1,500–$4,000</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>Monthly website & SEO: $800–$2,500/mo</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>Content + social: $1,000–$3,000/mo</li>
-                  <li className="text-body" style={{ marginBottom: '0.75rem', color: '#475569', fontWeight: 500 }}>GBP management: $300–$800/mo</li>
-                </ul>
-                <p className="text-body" style={{ color: '#475569', marginTop: '1rem', fontWeight: 500 }}>
-                  That's $2,000–$8,000 per month spread across multiple vendors.
-                </p>
+              <div className="card-bordered" style={{ textAlign: 'center' }}>
+                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Content becomes irregular</p>
+              </div>
+              <div className="card-bordered" style={{ textAlign: 'center' }}>
+                <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>Presence fades between busy weeks</p>
               </div>
             </div>
-            <div className="card" style={{ marginTop: '2.5rem', textAlign: 'center' }}>
-              <p className="text-subheading">
-                The businesses that win locally aren&apos;t necessarily the best—they&apos;re the most consistently visible
-                and trusted.
+            <p className="text-body" style={{ color: '#475569', marginTop: '2rem', maxWidth: '680px', margin: '2rem auto 0', textAlign: 'center', fontWeight: 500, fontSize: '1.125rem' }}>
+              And when customers need something — they choose the business that feels familiar, not necessarily the best one.
+            </p>
+            <div className="card-elevated" style={{ marginTop: '3rem', padding: '3rem', textAlign: 'center', maxWidth: '800px', margin: '3rem auto 0', background: 'linear-gradient(135deg, var(--mist-blue), var(--off-white))' }}>
+              <p className="text-heading" style={{ color: 'var(--steel-blue)', marginBottom: '1rem' }}>
+                80%
+              </p>
+              <p className="text-body" style={{ color: '#475569', fontWeight: 500 }}>
+                of U.S. consumers search for local businesses weekly
+              </p>
+              <p className="text-body" style={{ color: '#475569', marginTop: '1.5rem', fontWeight: 500 }}>
+                Yet 70% have abandoned or inconsistent social media accounts. The issue isn't awareness or effort—it's sustainability.
               </p>
             </div>
           </div>
