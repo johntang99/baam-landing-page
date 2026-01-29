@@ -121,6 +121,7 @@ const timeline = [
       'Baseline performance established',
     ],
     results: ['Profile views increase 15-25%', 'First new reviews appear', 'Content starts ranking in search'],
+    photo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
   },
   {
     title: 'Months 3–4: Activation',
@@ -135,6 +136,7 @@ const timeline = [
       'Calls and website visits increase 30-40%',
       'Ranking enters Top 5-10 for key searches',
     ],
+    photo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
   },
   {
     title: 'Months 5–8: Growth',
@@ -149,6 +151,7 @@ const timeline = [
       '50-70% increase in customer actions',
       'Reviews and trust signals multiply',
     ],
+    photo: 'https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&q=80',
   },
   {
     title: 'Months 9–12+: Market Leadership',
@@ -164,6 +167,7 @@ const timeline = [
       'Reduced reliance on ads',
       'Authority in local market',
     ],
+    photo: 'https://images.unsplash.com/photo-1553484771-047a44eee27b?w=600&q=80',
   },
 ];
 
@@ -824,16 +828,16 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <div className="timeline" style={{ marginTop: '2.5rem' }}>
+            <div style={{ marginTop: '3rem', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               {timeline.map((stage) => (
-                <div key={stage.title} className="timeline-item">
-                  <div className="text-subheading">{stage.title}</div>
-                  <div className="grid grid-2" style={{ marginTop: '1rem' }}>
+                <div key={stage.title} style={{ background: '#fff', borderRadius: '20px', padding: '2.5rem', boxShadow: '0 12px 40px rgba(18, 18, 18, 0.08)', border: '1px solid rgba(143, 143, 143, 0.1)' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: '2fr 2fr 1fr', gap: '3rem', alignItems: 'start' }}>
                     <div>
-                      <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
+                      <div className="text-subheading" style={{ marginBottom: '1.5rem' }}>{stage.title}</div>
+                      <div className="text-body" style={{ color: '#475569', fontWeight: 600, marginBottom: '0.75rem' }}>
                         What happens:
                       </div>
-                      <ul style={{ marginTop: '0.75rem', paddingLeft: '1.2rem' }}>
+                      <ul style={{ paddingLeft: '1.2rem' }}>
                         {stage.work.map((item) => (
                           <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
                             {item}
@@ -842,16 +846,19 @@ export default function HomePage() {
                       </ul>
                     </div>
                     <div>
-                      <div className="text-body" style={{ color: '#475569', fontWeight: 600 }}>
+                      <div className="text-body" style={{ color: '#475569', fontWeight: 600, marginBottom: '0.75rem', paddingTop: '3.3rem' }}>
                         Results:
                       </div>
-                      <ul style={{ marginTop: '0.75rem', paddingLeft: '1.2rem' }}>
+                      <ul style={{ paddingLeft: '1.2rem' }}>
                         {stage.results.map((item) => (
                           <li key={item} className="text-body" style={{ marginBottom: '0.5rem', color: '#475569', fontWeight: 500 }}>
                             {item}
                           </li>
                         ))}
                       </ul>
+                    </div>
+                    <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 24px rgba(18, 18, 18, 0.1)' }}>
+                      <img src={stage.photo} alt={stage.title} style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', display: 'block' }} />
                     </div>
                   </div>
                 </div>
